@@ -1,2 +1,6 @@
 header{width: 100%; height: 80px; margin: auto; padding: 15px 0px;}
-header .headerSearch{width: 100%;}
+header .headerSearch{width: 100%; height: 60px; border: 1px solid #3bb77e; padding: 10px 20px;}
+header .headerSearch .selectDrop{width: 18%; font-size: 16px; font-weight: 500; position: relative;}
+header .headerSearch .selectDrop::after{content: ''; width: 1px; height: 30px; background: rgba(0,0,0,0,1); position: absolute; top: 5px; right: 0px;}
+header .headerSearch .search{width: 82%;}
+header .headerSearch .search input{width: 100%; height: 30px; border: 0px; outline: none !important;}

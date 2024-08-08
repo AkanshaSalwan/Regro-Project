@@ -12,14 +12,23 @@ const Header =() =>{
                     <div className='col-sm-2'>
                       <img src={Logo} />
                     </div>
-                </div>
+
                {/* headersearch start */}
-               <div className='col'>
-               <div className='headerSearch d-flex align-item-center'>
-                
-                </div>
+
+               <div className='col-sm-5'>
+                  <div className='headerSearch d-flex align-item-center'>
+                      <div className='selectDrop cursor'>
+                        All Categories
+                      </div>
+                      <div className='search'>
+                        <input type="text" />
+                      </div>
+                  </div>
                </div>
-            </div>
+
+             {/* headersearch end */}
+                </div>
+           </div>
         </header>
         </>
     )
