@@ -21,7 +21,7 @@ const Header =() =>{
                         All Categories
                       </div>
                       <div className='search'>
-                        <input type="text" />
+                        <input type="text" placeholder='Search for items.....'/>
                       </div>
                   </div>
                </div>
