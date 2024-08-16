@@ -79,8 +79,9 @@ const Header = () => {
                            Cart
                             </span>
                         </li>
+                        {/* 1:40:27 clickaway listener remains */}
                         <li className='list-inline-item' >
-                            <span onClick={()=>setisOpenDropDown(!isOpenDropDown)}>
+                            <span onClick={()=>setisOpenDropDown(!isOpenDropDown)}>  
                               <img src={User}/>
                                Account
                             </span>
@@ -97,6 +98,7 @@ const Header = () => {
                             </ul>
                             }
                         </li>
+                        {/* 1:40:27 */}
                       </ul>
                    </div>
                  </div>
