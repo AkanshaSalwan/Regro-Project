@@ -4,12 +4,6 @@ header{
     margin: auto;
     padding: 30px 0px;
 }
-header img{
-    height: 70px;
-    width: 150px;
-    margin-left: 80px;
-    margin-top: 1px;
-}
 
 header .headerSearch {
     width: 100%;
@@ -17,7 +11,6 @@ header .headerSearch {
     border: 1px solid #bce3c9;
     padding: 10px 20px;
     cursor: pointer;
-   margin-top: 4px;
 }
 
 header .headerSearch .selectDrop {
@@ -35,10 +28,12 @@ header .headerSearch .selectDrop::after{
     position: absolute;
     top: 0px;
     right: 0px;
+
 }
 header .headerSearch .search {
     width: 82%;
     padding-left: 30px;
+    position: relative;
 }
 
 header .headerSearch .search input {
@@ -46,9 +41,12 @@ header .headerSearch .search input {
    height: 20px;
    border: 0px;
    outline: none !important;
+   font-size: 15px;
 }
-header .headerSearch .search .SearchIcon{
+header .headerSearch .search .searchIcon{
     position: absolute;
-    top: 12px;
-    right: 30px;
+    top: 4px;
+    right: 7px;
+    opacity: 0.6;
+    font-size: 25px !important;
 }
