@@ -12,6 +12,12 @@ header .headerSearch {
     padding: 10px 20px;
     cursor: pointer;
 }
+header .col-sm-2 img{
+    width: 140px;
+    height: 60px;
+    margin-left: 20px;
+
+}
 
 header .headerSearch .selectDrop {
     width: 30%;
@@ -50,3 +56,80 @@ header .headerSearch .search .searchIcon{
     opacity: 0.6;
     font-size: 25px !important;
 }
+/* not complete part css */
+header .countryWrapper .selectDropWrapper{
+    width: 200px !important;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ececec;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+header .countryWrapper .selectDropWrapper .openSelect{
+    width: 100%;
+}
+header .countryWrapper .selectDropWrapper .selectDrop{
+   left: 0px !important;
+
+}
+header .countryWrapper .openSelect{
+    color: #279a65 !important;
+}
+/*  */
+
+
+header .headerTabs{
+    padding-left: 40px;   
+}
+header .headerTabs li{
+    position: relative;
+    margin-left: 20px;
+}
+header .headerTabs li span{
+    font-size: 15px;
+    cursor: pointer;
+}
+header .headerTabs li span img{
+    margin-right: 10px;
+}
+header .headerTabs li span.badge{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-weight: 200;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    
+}
+.dropdownMenu{
+    position: absolute;
+    top: 100%;
+    right: 40px;
+    width: 200px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0 0 0 / 20%);
+    padding: 10px 0px;
+}
+.dropdownMenu li{
+    width: 100% !important;
+    list-style: none;
+    margin: 0px !important;
+}
+.dropdownMenu li button{
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    color: #635e5e !important;
+    text-transform: capitalize !important;
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+}
+.dropdownMenu li button svg{
+    opacity: 0.7;
+    margin-right: 8px !important;
+}
+
