@@ -78,7 +78,9 @@ header .countryWrapper .openSelect{
     color: #279a65 !important;
 }
 /*  */
-
+header .list .bg-success{
+    background-color:  #3bb77e !important;
+}
 
 header .headerTabs{
     padding-left: 40px;   
@@ -104,6 +106,7 @@ header .headerTabs li span.badge{
     left: 10px;
     
 }
+
 .dropdownMenu{
     position: absolute;
     top: 100%;
@@ -113,6 +116,7 @@ header .headerTabs li span.badge{
     background: #fff;
     box-shadow: 0 3px 6px rgba(0 0 0 / 20%);
     padding: 10px 0px;
+    z-index: 100;
 }
 .dropdownMenu li{
     width: 100% !important;

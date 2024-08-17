@@ -16,6 +16,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import Nav from './nav/nav';
 
 
 
@@ -98,7 +99,7 @@ const Header = () => {
                             </ul>
                             }
                         </li>
-                        {/* 1:40:27 */}
+                       
                       </ul>
                    </div>
                  </div>
@@ -107,6 +108,8 @@ const Header = () => {
           </div>
         </div>
       </header>
+
+      <Nav></Nav>
     </>
   )
 }
