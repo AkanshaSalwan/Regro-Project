@@ -22,7 +22,7 @@ const Nav = ()=>{
                     <KeyboardArrowDownOutlinedIcon></KeyboardArrowDownOutlinedIcon>
                  </Button>
                 </div>
-                <div className='col-sm-6 part2'>
+                <div className='col-sm-7 part2'>
                 <nav>
                     <ul className='list list-inline'>
                         <li className='list-inline-item'>
@@ -39,6 +39,21 @@ const Nav = ()=>{
                         </li>
                         <li className='list-inline-item'>
                             <Button><Link>Venders<KeyboardArrowDownOutlinedIcon></KeyboardArrowDownOutlinedIcon></Link></Button>
+                            <div className='dropdown_menu'>
+                              <ul>
+                                <li><Button><Link to="/about">About Us</Link></Button></li>
+                                <li><Button><Link to="/about">Contact</Link></Button></li>
+                                <li><Button><Link to="/about">My Account</Link></Button></li>
+                                <li><Button><Link to="/about">Login</Link></Button></li>
+                                <li><Button><Link to="/about">Register</Link></Button></li>
+                                <li><Button><Link to="/about">Forgot Password</Link></Button></li>
+                                <li><Button><Link to="/about">Reset Password</Link></Button></li>
+                                <li><Button><Link to="/about">Purchase Guide</Link></Button></li>
+                                <li><Button><Link to="/about">Privacy Policy</Link></Button></li>
+                                <li><Button><Link to="/about">Terms Of Service</Link></Button></li>
+                                <li><Button><Link to="/about">404 Page</Link></Button></li>
+                             </ul>  
+                            </div>
                         </li>
                         <li className='list-inline-item'>
                             <Button><Link>Megha menu<KeyboardArrowDownOutlinedIcon></KeyboardArrowDownOutlinedIcon></Link></Button>
