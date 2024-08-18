@@ -30,6 +30,12 @@ const HomeSlider =()=>{
             <Slider {...settings} className='home_Slider_main'>
                <div className='item'>
                  <img src={Slide1} className='w-100'/>
+                 <div className='info'>
+                   <h2 className='mb-4'>
+                     Dont't miss amazing <br></br>grocery deals
+                   </h2>
+                   <p>Sign up or the daily newsletter</p>
+                 </div>
               </div>
               <div className='item'>
                  <img src={Slide2} className='w-100'/>

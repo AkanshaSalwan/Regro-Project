@@ -47,4 +47,31 @@
     position: absolute;
     bottom: 30px !important;
 }
-
+.home_Slider_main .slick-dots button::before{
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 16px !important;
+}
+.slick-active button::before {
+   color:#3bb77e !important;
+}
+.home_Slider_main .item{
+    position: relative;
+}
+.home_Slider_main .item .info{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    z-index: 100;
+}
+.home_Slider_main .item .info h2{
+    font-size: 75px !important;
+    font-weight: bolder;
+    color: rgba(4, 3, 20, 0.7);
+}
+.home_Slider_main .item .info p{
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+    opacity: 0.4;
+}

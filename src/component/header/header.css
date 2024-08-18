@@ -83,7 +83,8 @@ header .list .bg-success{
 }
 
 header .headerTabs{
-    padding-left: 40px;   
+    padding-left: 40px; 
+    margin-left: 150px;
 }
 header .headerTabs li{
     position: relative;
