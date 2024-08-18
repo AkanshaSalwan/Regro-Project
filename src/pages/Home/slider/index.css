@@ -1,0 +1,50 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
+
+.homeSlider{
+    padding: 30px 0px;
+}
+  
+.home_Slider_main{
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+/* .slick-arrow{
+    position: absolute;
+    top: 47%;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    background: rgb(231, 193, 59) !important;
+    z-index: 100 !important;
+   
+}
+.slick-arrow:hover{
+    background: #3bb77e;
+}
+.slick-arrow.slick-next{
+    right: 2% !important;
+}
+.slick-arrow.slick-prev{
+    left: 2% !important;
+}
+.slick-prev:before{
+    content: "\f104" !important;
+    font-weight: FontAwesome !important;
+    font-size: 30px;
+}
+.slick-next:before{
+    content: "\f105" !important;
+    font-weight: FontAwesome !important;
+    font-size: 30px;
+} */
+/* some part remains */
+
+/* css for dots that bottom slide img */
+.home_Slider_main .slick-dots{
+    position: absolute;
+    bottom: 30px !important;
+}
+
