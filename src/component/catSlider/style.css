@@ -1,0 +1,69 @@
+.catSliderSection{
+    width: 100%;
+    height: auto;
+    padding: 30PX 0PX;
+
+}
+.catSliderSection .hd{
+    color: #253D4E;
+}
+.cat_Slider_Main .slick-slide{
+    padding-right: 20px !important;
+}
+.cat_Slider_Main .item{
+    height: 200px;
+    background: #d7e9e2;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.cat_Slider_Main .item .info{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+    
+}
+.cat_Slider_Main .item .info img{
+    height: 80px;
+    width: 80px;
+}
+.cat_Slider_Main .item .info h5{
+    font-weight: 500 !important;
+}
+/* chnages neede in font size and also card */
+/* also remains to add differnt colors to cardr using API remember */
+.cat_Slider_Main .item .info p{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-dots button::before{
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 16px !important;
+}
+.slick-active button::before {
+   color:#3bb77e !important;
+}
+/* silder icons not added   they direcly added when in main slider section we add sliding icons   */
+
