@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import './index.css';
-import '../../../assets/images/image/slideBanner1.jpg';
+
 import Slide1 from '../../../assets/images/slider-1.png';
 import Slide2 from '../../../assets/images/slider-2.png';
 // import '../../../../node_modules/react-slick';

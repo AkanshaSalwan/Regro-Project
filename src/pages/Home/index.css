@@ -1,0 +1,20 @@
+.homeProducts{
+    margin-bottom: 200px;
+    padding: 25px 0px;
+}
+.filterTab li{
+    margin-left: 20px;
+}
+.filterTab li a{
+   color: #000;
+   text-decoration: none;
+   font-size: 20px;
+   transition: all 0.3s ease-in-out;
+   font-weight: 500;
+
+}
+.filterTab li:hover a{
+    color: #3bb77e !important;
+    transform: translate(-10px);
+   
+}

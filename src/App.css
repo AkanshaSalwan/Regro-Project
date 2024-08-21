@@ -8,12 +8,14 @@ body{
     font-family: 'Robot',sans-serif;
 }
 #root{
-    zoom: 90%;
+    zoom: 80%;
 }
 .container-fluid{
     padding: 0px 45px;
 }
-
+.transition{
+    transition: all 0.3s ease-in-out;
+}
 .cursor{cursor: pointer;}
 
 .bg-g{

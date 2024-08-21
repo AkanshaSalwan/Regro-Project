@@ -28,6 +28,8 @@
     flex-direction: column;
     height: 100%;
     padding: 15px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
     
 }
 .cat_Slider_Main .item .info img{
@@ -37,26 +39,11 @@
 .cat_Slider_Main .item .info h5{
     font-weight: 500 !important;
 }
-/* chnages neede in font size and also card */
-/* also remains to add differnt colors to cardr using API remember */
-.cat_Slider_Main .item .info p{
-    
+/* changes needs in font size and also card */
+/* also remains to add different colors to cards using API remember */
+.cat_Slider_Main .item .info p{    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slick-dots button::before{
     width: 10px !important;
     height: 10px !important;
@@ -65,5 +52,9 @@
 .slick-active button::before {
    color:#3bb77e !important;
 }
-/* silder icons not added   they direcly added when in main slider section we add sliding icons   */
-
+/* Silder icons not added   they directly added when in main slider section we add sliding icons   */
+.cat_Slider_Main  .item:hover .info{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: scale(1.0);
+}
+/* changes 2:45  #6 */
