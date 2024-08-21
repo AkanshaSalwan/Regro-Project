@@ -1,8 +1,11 @@
 import React from 'react';
 import Slider from './slider/index';
 import CatSlider from '../../component/catSlider';
+
 import Banners from '../../component/banners';
 import './index.css';
+import  Products from '../../component/products';
+
 
 
 
@@ -14,7 +17,7 @@ const Home = () => {
     <Banners></Banners>
 
 
-    <section className=' '>
+    <section className='homeProducts'>
       <div className='container-fluid'>
         <div className='d-flex align-item-center'>
         <h2 className='hd mb-0 mt-0'>Popular Products</h2>
@@ -41,6 +44,25 @@ const Home = () => {
               <a href="cursor">Fruits</a>
             </li>
         </ul>
+        </div>
+
+
+        <div className='row productRow'>
+          <div className='item'>
+            <Products></Products>
+          </div>
+          <div className='item'>
+            <Products></Products>
+          </div>
+          <div className='item'>
+            <Products></Products>
+          </div>
+          <div className='item'>
+            <Products></Products>
+          </div>
+          <div className='item'>
+            <Products></Products>
+          </div>
         </div>
       </div>
     </section>

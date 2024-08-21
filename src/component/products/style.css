@@ -1,0 +1,22 @@
+.productThumb{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 15px;
+}
+.productThumb .catName{
+   color: #000;
+   opacity: 0.8;
+   font-size: 14px;
+}
+.productThumb .title{
+    color: #000;
+    font-weight: 600;
+    font-size: 22px;
+}
+.productThumb .info button{
+  background: #aaedce;
+  color: #15784a;
+}

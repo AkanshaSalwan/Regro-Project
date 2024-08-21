@@ -18,3 +18,11 @@
     transform: translate(-10px);
    
 }
+.homeProducts .productRow{
+    display: flex;
+    padding: 30px 0px;
+}
+.homeProducts .productRow .item{
+    width: 20%;
+   padding: 0px 15px;
+}
