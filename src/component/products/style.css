@@ -17,9 +17,11 @@
 .productThumb .imgWrapper img{
   transition: all0.3s ease-in-out;
 }
+
 .productThumb:hover  .imgWrapper img{
-  transform: scale(1.1);   /*it is use for for adding a zoom effect on product img */
+  transform: scale(1.2);   /*it is use for for adding a zoom effect on product img */
 }
+
 .productThumb .catName{
    color: #000;
    opacity: 0.8;

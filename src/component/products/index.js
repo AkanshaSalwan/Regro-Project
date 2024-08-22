@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const Product = () => {
+const Products = () => {
   return (
     <>
       <div className="productThumb">
@@ -13,8 +13,7 @@ const Product = () => {
          <div className="imgWrapper">
             <img
             src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-2-2.jpg"
-            className="w-100"
-            alt=""/>
+            className="w-100" alt=""/> 
          </div>
       </Link>
         <div className="info">
@@ -40,4 +39,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Products;
