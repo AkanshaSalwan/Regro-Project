@@ -10,9 +10,11 @@
     font-size: 18px !important;
     text-transform: capitalize !important;
     background: #3bb77e;
-    color: #fff;
-    
+    color: #fff; 
 } 
+.nav .catTab:hover{
+  background-color: #3bb77e;
+}
 /* finishing  1:04:36 #3*/
 
 /* for alignment finishing #4 */
