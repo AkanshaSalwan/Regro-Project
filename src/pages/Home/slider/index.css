@@ -11,35 +11,56 @@
     overflow: hidden;
     position: relative;
 }
-/* .slick-arrow{
+
+  .homeSlider .home_Slider_main .slick-prev, 
+ .homeSlider .home_Slider_main .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3bb77e;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.homeSlider .home_Slider_main .slick-prev {
+    left: 10px;
+}
+.homeSlider .home_Slider_main .slick-next {
+    right: 10px;
+    
+}  
+
+/* .homeSlider .home_Slider_main .slick-arrow{
     position: absolute;
     top: 47%;
     width: 30px !important;
     height: 30px !important;
     border-radius: 50% !important;
-    background: rgb(231, 193, 59) !important;
+    background:  #3bb77e !important;
     z-index: 100 !important;
    
 }
-.slick-arrow:hover{
+.homeSlider .home_Slider_main .slick-arrow:hover{
     background: #3bb77e;
 }
-.slick-arrow.slick-next{
+.homeSlider .home_Slider_main .slick-arrow.slick-next{
     right: 2% !important;
 }
-.slick-arrow.slick-prev{
+.homeSlider .home_Slider_main .slick-arrow.slick-prev{
     left: 2% !important;
 }
-.slick-prev:before{
+.homeSlider .home_Slider_main .slick-prev:before{
     content: "\f104" !important;
     font-weight: FontAwesome !important;
     font-size: 30px;
 }
-.slick-next:before{
+.homeSlider .home_Slider_main .slick-next:before{
     content: "\f105" !important;
     font-weight: FontAwesome !important;
     font-size: 30px;
-} */
+} */ 
 /* some part remains */
 
 /* css for dots that bottom slide img */

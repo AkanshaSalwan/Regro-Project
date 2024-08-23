@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "./slider/index";
 import CatSlider from "../../component/catSlider";
-
 import Banners from "../../component/banners";
 import "./index.css";
 import Products from "../../component/products";

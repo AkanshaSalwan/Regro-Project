@@ -1,67 +1,81 @@
 .productThumb{
-    width: 100%;
-    height: auto;
-    border: 1px solid rgba(0,0,0,0.1);
-    overflow: hidden;
-    border-radius: 20px;
-    padding: 20px;
-    transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .productThumb:hover{
-   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .productThumb .imgWrapper{
-  width: 100%;
-  overflow: hidden;
+width: 100%;
+overflow: hidden;
+position: relative;
 }
 .productThumb .imgWrapper img{
-  transition: all0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.productThumb .imgWrapper  .overlay{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: rgba(225,225,225,0.5);
+padding: 25px !important;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .productThumb:hover  .imgWrapper img{
-  transform: scale(1.2);   /*it is use for for adding a zoom effect on product img */
+transform: scale(1.1);   /*it is use for for adding a zoom effect on product img */
 }
 
 .productThumb .catName{
-   color: #000;
-   opacity: 0.8;
-   font-size: 14px;
+ color: #000;
+ opacity: 0.8;
+ font-size: 14px;
 }
 .productThumb .title{
-  width: 10px 0px;
+width: 10px 0px;
 }
 .productThumb .title a{
-    color: #000;
-    font-weight: 600;
-    font-size: 22px;
-    text-decoration: none;
-    line-height: 25px;
+  color: #000;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  line-height: 25px;
 }
 .productThumb .info button{
-  background:  #ade4c9;
-  color: #229b62;
-  font-size: 20px !important;
-  padding: 5px 20px !important;
-  text-transform: capitalize;
+background:  #ade4c9;
+color: #229b62;
+font-size: 20px !important;
+padding: 5px 20px !important;
+text-transform: capitalize;
 }
 .productThumb .info button:hover{
-  background: #3bb77e;
-  color: #fff;
- 
+background: #3bb77e;
+color: #fff;
+
 }
 .productThumb .brand{
-  color: rgba(0,0,0,0.6);
+color: rgba(0,0,0,0.6);
 }
 .productThumb .brand a{
-  text-decoration: none;
+text-decoration: none;
 }
 .productThumb .price{
- font-size: 25px;
- margin-right: 20px;
+font-size: 25px;
+margin-right: 20px;
 }
 .productThumb .oldPrice{
-  font-size: 20px;
-  opacity: 0.6;
-  color: #000;
-  text-decoration: line-through;
-} 
+font-size: 20px;
+opacity: 0.6;
+color: #000;
+text-decoration: line-through;
+}

@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+   
 }
 .cat_Slider_Main .item .info{
     margin: auto;
@@ -30,6 +30,7 @@
     padding: 15px;
     transition: all 0.2s ease-in-out;
     position: relative;
+    border-radius: 20p;
     
 }
 .cat_Slider_Main .item .info img{
@@ -42,16 +43,33 @@
 /* changes needs in font size and also card */
 /* also remains to add different colors to cards using API remember */
 .cat_Slider_Main .item .info p{    
+   font-size: 14px;
+   margin-bottom: 0px;
+   color: #000;
+   opacity: 0.8;
+}
 
+/* Specific styles for slick slider arrows */
+ .catSliderSection .slick-prev, 
+.catSliderSection .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3bb77e;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.slick-dots button::before{
-    width: 10px !important;
-    height: 10px !important;
-    font-size: 16px !important;
+.catSliderSection .slick-prev {
+    left: 10px;
 }
-.slick-active button::before {
-   color:#3bb77e !important;
-}
+.catSliderSection .slick-next {
+    right: 10px;
+    top: 60px;
+} 
+
 /* Silder icons not added   they directly added when in main slider section we add sliding icons   */
 .cat_Slider_Main  .item:hover .info{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

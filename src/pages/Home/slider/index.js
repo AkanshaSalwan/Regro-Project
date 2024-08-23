@@ -17,7 +17,7 @@ const HomeSlider =()=>{
         slidesToShow: 1,
         slidesToScroll: 1,
         fade:true, //slider slider automatic no need to tap  on slide button
-      //   arrows:true
+        arrows:true
       };
 
 //       <i class="fa fa-angle-left" aria-hidden="true"></i>  issue in 24:26 #4
