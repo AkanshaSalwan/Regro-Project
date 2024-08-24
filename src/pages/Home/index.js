@@ -74,6 +74,72 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+        <section className="homeProducts pt-0">
+        <div className="container-fluid">
+          <div className="d-flex align-item-center">
+            <h2 className="hd mb-0 mt-0">Daily Best Sells</h2>
+             <ul className="list list-inline ml-auto filterTab mb-0">
+              <li className="list-inline-item">
+                <a href="cursor">Feature</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="cursor">Popular</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="cursor">New added</a>
+              </li>
+              {/* <li className="list-inline-item">
+                <a href="cursor">Pet Foods</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="cursor">Meats</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="cursor">Vegetables</a>
+              </li>
+              <li className="list-inline-item">
+                <a href="cursor">Fruits</a>
+              </li> */}
+            </ul>
+
+          </div>
+          {/* <div className="row productRow">
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+            <div className="item">
+              <Products></Products>
+            </div>
+          </div> */}
+          <br /> <br /> <br />  <br /><br /><br /><br />
+        </div>
+      </section>
     </>
   );
 };

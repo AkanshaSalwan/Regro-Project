@@ -1,14 +1,14 @@
 .homeProducts{
-    margin-bottom: 200px;
-    padding: 25px 0px;
-   
+ padding: 25px 0px;
 }
-
+.homeProducts h2{
+    color: #253D4E;
+}
 .filterTab li{
     margin-left: 20px;
 }
 .filterTab li a{
-   color: #000;
+   color: #253D4E;
    text-decoration: none;
    font-size: 20px;
    transition: all 0.3s ease-in-out;
