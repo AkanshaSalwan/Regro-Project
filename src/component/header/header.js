@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/logo.svg';
 import logo from '../../assets/images/logo1.svg'
@@ -23,6 +23,20 @@ import Nav from './nav/nav';
 const Header = () => {
 
   const [isOpenDropDown, setisOpenDropDown] = useState(false);
+
+
+// useEffect(()=>{
+//   window.addEventListener("scroll",()=>{
+//     let position = window.pageYOffset;
+//     if(position>100){
+//       headerRef.current.classList.add('fixed')
+//     }else{
+//       headerRef.current.classList.remove('fixed')
+//     }
+//   })
+// },[])
+
+// some changea here #7 28:23
   return (
     <>
       <header>

@@ -16,7 +16,7 @@ const Home = () => {
         <div className="container-fluid">
           <div className="d-flex align-item-center">
             <h2 className="hd mb-0 mt-0">Popular Products</h2>
-            <ul className="list list-inline ml-auto filterTab">
+            <ul className="list list-inline ml-auto filterTab mb-0">
               <li className="list-inline-item">
                 <a href="cursor">All</a>
               </li>
