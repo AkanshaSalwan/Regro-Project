@@ -32,3 +32,43 @@
    padding: 15px 15px;
    
 }
+/* .homeProductsRow2 .prodSlider .slick-slide{
+    padding-right: 15px !important;
+} */
+.homeProductsRow2 .prodSlider .item{
+    padding: 15px 5px;
+    padding-right: 25px !important;
+}
+.homeProductsRow2{
+    
+}
+.homeProducts .homeProductsRow2 img{
+   
+}
+/* slider add krna hai  #7 41:26 */
+/* Specific styles for slick slider arrows */
+/* .homeProducts  .homeProductsRow2 .prodSlider .slick-prev, 
+.homeProducts .homeProductsRow2 .prodSlider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3bb77e;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.homeProducts .homeProductsRow2 .prodSlider .slick-prev {
+    left: 10px;
+}
+.homeProducts .homeProductsRow2 .prodSlider .slick-next {
+    right: 10px;
+    top: 60px;
+} 
+
+ Silder icons not added   they directly added when in main slider section we add sliding icons  
+.homeProducts .productRow  .item:hover .info{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: scale(1.0);
+} */

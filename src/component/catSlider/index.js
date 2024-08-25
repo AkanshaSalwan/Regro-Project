@@ -33,7 +33,9 @@ const CatSlider = () => {
     slidesToShow: 10,
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
-    arrows:true
+    arrows:true,
+    autoplay:2000,
+    centerMode:true
   };
   return (
     <>
