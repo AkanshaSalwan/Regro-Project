@@ -8,6 +8,7 @@ import "./index.css";
 import Products from "../../component/products";
 import  Banner4 from "../../assets/images/banner-4.png";
 import Slider from "react-slick";
+import TopProducts from "./TopProducts";
 
 
 
@@ -21,7 +22,7 @@ const Home = () => {
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows:true,
-    autoplay:2000
+    // autoplay:2000
   };
 
   return (
@@ -158,6 +159,32 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      <br /><br />
+
+
+      <section className="topProductSection">
+         <div className="container-fluid">
+              <div className="row">
+                  <div className="col">
+                    <TopProducts></TopProducts>
+                      {/* <h2>Top Selling</h2> */}
+                  </div> 
+                  <div className="col">
+                     {/* <h2>Trending Products</h2> */}
+                     <TopProducts></TopProducts>
+                  </div>
+                  <div className="col">
+                       {/* <h2>Recently added</h2> */}
+                       <TopProducts></TopProducts>
+                  </div>
+                  <div className="col">
+                      {/* <h2>Top Rated</h2> */}
+                      <TopProducts></TopProducts>
+                  </div>
+
+              </div>
+         </div>
       </section>
     </>
   );
