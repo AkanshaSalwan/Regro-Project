@@ -6,14 +6,13 @@ import Banners from "../../component/banners";
 
 import "./index.css";
 import Products from "../../component/products";
-import  Banner4 from "../../assets/images/banner-4.png";
+import Banner4 from "../../assets/images/banner-4.png";
 import Slider from "react-slick";
 import TopProducts from "./TopProducts";
-
-
+import NewsletterImg from '../../assets/images/slider-3.png';
+import Newsletter from "../../component/newsletter";
 
 const Home = () => {
-
   var settings = {
     dots: true,
     infinite: true,
@@ -21,7 +20,7 @@ const Home = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
-    arrows:true,
+    arrows: true,
     // autoplay:2000
   };
 
@@ -94,12 +93,11 @@ const Home = () => {
         </div>
       </section>
 
-
-        <section className="homeProducts homeProductsRow2 pt-0">
+      <section className="homeProducts homeProductsRow2 pt-0">
         <div className="container-fluid">
           <div className="d-flex align-item-center">
             <h2 className="hd mb-0 mt-0">Daily Best Sells</h2>
-             <ul className="list list-inline ml-auto filterTab mb-0">
+            <ul className="list list-inline ml-auto filterTab mb-0">
               <li className="list-inline-item">
                 <a href="cursor">Feature</a>
               </li>
@@ -122,70 +120,84 @@ const Home = () => {
                 <a href="cursor">Fruits</a>
               </li> */}
             </ul>
-
           </div>
-          <br /><br />
+          <br />
+          <br />
           <div className="row">
-              <div className="col-md-3 pr-5">
-                <img src={Banner4}  className="w-100"/>
-              </div>
-              
-              <div className="col-md-9">
-              <Slider {...settings} className='prodSlider'>
+            <div className="col-md-3 pr-5">
+              <img src={Banner4} className="w-100" />
+            </div>
+
+            <div className="col-md-9">
+              <Slider {...settings} className="prodSlider">
                 {/* slider add krna hia #7 41:26 */}
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-             <div className="item">
-                <Products></Products>
-             </div>
-              
-            </Slider>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+              </Slider>
             </div>
           </div>
         </div>
       </section>
-      <br /><br />
-
+      <br />
+      <br />
 
       <section className="topProductSection">
-         <div className="container-fluid">
-              <div className="row">
-                  <div className="col">
-                    <TopProducts></TopProducts>
-                      {/* <h2>Top Selling</h2> */}
-                  </div> 
-                  <div className="col">
-                     {/* <h2>Trending Products</h2> */}
-                     <TopProducts></TopProducts>
-                  </div>
-                  <div className="col">
-                       {/* <h2>Recently added</h2> */}
-                       <TopProducts></TopProducts>
-                  </div>
-                  <div className="col">
-                      {/* <h2>Top Rated</h2> */}
-                      <TopProducts></TopProducts>
-                  </div>
-
-              </div>
-         </div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <TopProducts title="Top Selling"></TopProducts>
+            </div>
+            <div className="col">
+              <TopProducts title="Trending Products"></TopProducts>
+            </div>
+            <div className="col">
+              <TopProducts title="Recently added"></TopProducts>
+            </div>
+            <div className="col">
+              <TopProducts title="Top Rated"></TopProducts>
+            </div>
+          </div>
+        </div>
       </section>
+ <br /> <br />
+      <section className="newsLetterSection">
+           <div className="container-fluid">
+             <div className="box d-flex align-items-center">
+                <div className="info">
+                    <h2>Stay home & get your daily <br />
+                    needs from our shop</h2>
+                    <br />
+                    <p>Start You'r Daily Shopping with <span> Nest Mart</span></p>
+                    <br /> <br />
+                    <Newsletter></Newsletter>
+                </div>
+                <div className="img">
+                  <img src={NewsletterImg} className="w-100" />
+                </div>
+             </div>
+           </div>
+      </section>
+
+      <br /><br /><br /><br />
     </>
   );
 };

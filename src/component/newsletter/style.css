@@ -1,0 +1,33 @@
+ .newsLetterBanner{
+    width: 650px;
+    height: 80px;
+    position: relative;
+    bottom: 250px;
+    left: 6%;
+    z-index: 10;
+}  
+ .newsLetterBanner input{
+   width: 580px;
+   height: 90px;
+   background: #fff;
+   border-radius: 45px;
+   border: 0px;
+   outline: none !important;
+   padding-left: 50px;
+   font-size: 20px;
+   padding-right: 200px;
+   
+}   
+/* changes needed */
+/* icon add krne hai 10:16 #4*/
+ .newsLetterBanner button{
+   padding: 25px 45px !important;
+   border-radius: 40px !important;
+   background: #3bb77e;
+   position: absolute;
+   top: 6px;
+   right: 80px;
+   color: #fff;
+   font-size: 17px;
+   text-transform: capitalize !important;
+}  
