@@ -97,11 +97,14 @@ transform: scale(1.1);   /*it is use for for adding a zoom effect on product img
 width: 10px 0px;
 }
 .productThumb .title a{
-  color: #000;
-  font-weight: 600;
+  color: #253D4E;
+  /* font-weight: 600; */
   font-size: 22px;
   text-decoration: none;
   line-height: 25px;
+}
+.productThumb .title a:hover{
+  color: #3bb77e;
 }
 .productThumb .info button{
 background:  #ade4c9;
@@ -131,6 +134,7 @@ opacity: 0.6;
 color: #000;
 text-decoration: line-through;
 }
+
 
 
 

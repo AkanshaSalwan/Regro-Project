@@ -63,11 +63,12 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .catSliderSection .slick-prev {
-    left: 10px;
+    left: 1900px;
+    top: 0px;
 }
 .catSliderSection .slick-next {
     right: 10px;
-    top: 60px;
+    top: 0px;
 } 
 
 /* Silder icons not added   they directly added when in main slider section we add sliding icons   */

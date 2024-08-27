@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/logo.svg';
-import logo from '../../assets/images/logo1.svg'
+import logo from '../../assets/images/logo1.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import Select from '../selectDrop/select';
 import Compare from '../../assets/images/icon-compare.svg';

@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import TopProducts from "./TopProducts";
 import NewsletterImg from '../../assets/images/slider-3.png';
 import Newsletter from "../../component/newsletter";
+import Footer from "../../component/footer/footer";
 
 const Home = () => {
   var settings = {
@@ -196,6 +197,9 @@ const Home = () => {
              </div>
            </div>
       </section>
+
+
+     <Footer></Footer>
 
       <br /><br /><br /><br />
     </>

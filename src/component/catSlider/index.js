@@ -42,6 +42,7 @@ const CatSlider = () => {
       <div className="catSliderSection">
         <div className="container-fluid">
           <h2 className="hd">Featured Categories</h2>
+         
           <Slider {...settings} className="cat_Slider_Main">
             {
               itemBg.length!==0 && itemBg.map((item,index)=>{
