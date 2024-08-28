@@ -20,11 +20,32 @@ import { ImTwitter } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
-
+import NewsletterImg from '../../assets/images/slider-3.png';
+import Newsletter from "../../component/newsletter";
 
 const Footer = () => {
   return (
     <>
+
+<section className="newsLetterSection">
+           <div className="container-fluid">
+             <div className="box d-flex align-items-center">
+                <div className="info">
+                    <h2>Stay home & get your daily <br />
+                    needs from our shop</h2>
+                    <br />
+                    <p>Start You'r Daily Shopping with <span> Nest Mart</span></p>
+                    <br /> <br />
+                    <Newsletter></Newsletter>
+                </div>
+                <div className="img">
+                  <img src={NewsletterImg} className="w-100" />
+                </div>
+             </div>
+           </div>
+      </section>
+
+
       <div className="footerWrapper">
         <div className="footerBoxes">
           <div className="container-fluid">
@@ -102,30 +123,29 @@ const Footer = () => {
                 </p>
                 <br />
                 <p>
-                  {" "}
+                 
                   <span className="svg-icon">
-                    {" "}
-                    <FiMapPin></FiMapPin>
+                  <FiMapPin></FiMapPin>
                   </span>
-                  <strong> Address:</strong> 5171 W Campbell Ave <br />{" "}
+                  <strong> Address:</strong> 5171 W Campbell Ave <br />
                   undefined Kent, Utah 53127 United States
                 </p>
                 <p>
-                  {" "}
+                
                   <span className="svg-icon">
                     <HeadsetMicOutlinedIcon></HeadsetMicOutlinedIcon>
-                  </span>{" "}
+                  </span>
                   <strong>Call Us:</strong>(+91) - 540-025-124553
                 </p>
                 <p>
-                  {" "}
+                  
                   <span className="svg-icon">
                     <SendOutlinedIcon></SendOutlinedIcon>
-                  </span>{" "}
+                  </span>
                   <strong>Email:</strong>sale@Nest.com
                 </p>
                 <p>
-                  {" "}
+                  
                   <span className="svg-icon">
                     <QueryBuilderOutlinedIcon></QueryBuilderOutlinedIcon>
                   </span>
@@ -248,15 +268,16 @@ const Footer = () => {
                 <p>From App Store or Google Play</p>
                 <div className="d-flex">
                   <Link to={""}>
-                    {" "}
-                    <img src={appStore} width={140} />{" "}
+                      <img src={appStore} width={140} />
                   </Link>
+
                   <Link to={""}>
-                    {" "}
-                    <img src={googlePlay} className="mx-2" width={140} />{" "}
+                    <img src={googlePlay} className="mx-2" width={140} />
                   </Link>
                 </div>
+
                 <br /> <br />
+
                 <p>Secured Payment Gateways</p>
                 <img src={paymentMethod} className="mx-2 p3" width={250} />
               </div>
@@ -264,65 +285,78 @@ const Footer = () => {
 
             <hr />
 
-        <div className="row lastStrip">
+            <div className="row lastStrip">
               <div className="col-md-3 ">
                 <p>@Devloped By Akansha Salwan ❤️ All rights reserved.</p>
               </div>
-            <div className="col-md-6 d-flex">
-               <div className="m-auto d-flex align-items-center">
-               <div className="phNo d-flex align-items-center mx-4">
-                  <span>
-                    <LuPhoneCall></LuPhoneCall>
-                  </span>
-                  <div className="info ml-3">
-                    <h5 className="text-g mb-0">
-                      1900-6666
-                      <p className="mb-0">Working 8:00 - 22:00</p>
-                    </h5>
+              <div className="col-md-6 d-flex">
+                <div className="m-auto d-flex align-items-center">
+                  <div className="phNo d-flex align-items-center mx-4">
+                    <span>
+                      <LuPhoneCall></LuPhoneCall>
+                    </span>
+                    <div className="info ml-3">
+                      <h5 className="text-g mb-0">
+                        1900-6666
+                        <p className="mb-0">Working 8:00 - 22:00</p>
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="phNo d-flex align-items-center mx-4">
+                    <span>
+                      <LuPhoneCall></LuPhoneCall>
+                    </span>
+                    <div className="info ml-3">
+                      <h5 className="text-g mb-0">
+                        1900-8888
+                        <p className="mb-0">24/7 Support Center</p>
+                      </h5>
+                    </div>
                   </div>
                 </div>
-                <div className="phNo d-flex align-items-center mx-4">
-                  <span>
-                    <LuPhoneCall></LuPhoneCall>
-                  </span>
-                  <div className="info ml-3">
-                    <h5 className="text-g mb-0">
-                      1900-8888
-                      <p className="mb-0">24/7 Support Center</p>
-                    </h5>
-                  </div>
+              </div>
+
+              <div className="col-md-3 part3">
+                <div className="d-flex align-items-center">
+                  <h5>Follow Us</h5>
+                  <ul className="list list-inline d-flex">
+                    <li className="list-inline-items">
+                      <Link to={""}>
+                       
+                        <RiFacebookFill></RiFacebookFill>
+                      </Link>
+                    </li>
+                    <li className="list-inline-items">
+                      <Link to={""}>
+                       
+                        <ImTwitter></ImTwitter>
+                      </Link>
+                    </li>
+                    <li className="list-inline-items">
+                      <Link to={""}>
+                        
+                        <FaInstagram></FaInstagram>
+                      </Link>
+                    </li>
+                    <li className="list-inline-items">
+                      <Link to={""}>
+                       
+                        <FaPinterestP></FaPinterestP>
+                      </Link>
+                    </li>
+                    <li className="list-inline-items">
+                      <Link to={""}>
+                       
+                        <FaYoutube></FaYoutube>
+                      </Link>
+                    </li>
+                  </ul>
+
+                  {/* <p>Up to 15% discount on your first subscribe</p> */}
                 </div>
-               </div>
-             </div>
-
-
-
-            <div className="col-md-3 part3">
-               <div className="d-flex align-items-center">
-                <h5>Follow Us</h5>
-                <ul className="list list-inline d-flex">
-                    <li className="list-inline-items">
-                        <Link to={''}> < RiFacebookFill></RiFacebookFill> </Link>
-                    </li>
-                    <li className="list-inline-items">
-                        <Link to={''}> <ImTwitter></ImTwitter> </Link>
-                    </li>
-                    <li className="list-inline-items">
-                        <Link to={''}> <FaInstagram></FaInstagram> </Link>
-                    </li>
-                    <li className="list-inline-items">
-                        <Link to={''}> < FaPinterestP></FaPinterestP> </Link>
-                    </li>
-                    <li className="list-inline-items">
-                        <Link to={''}> <FaYoutube></FaYoutube> </Link>
-                    </li>
-                </ul>
-                
-                {/* <p>Up to 15% discount on your first subscribe</p> */}
-               </div>
+              </div>
             </div>
-            </div>
-         </div>
+          </div>
         </footer>
       </div>
     </>

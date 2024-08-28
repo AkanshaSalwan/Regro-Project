@@ -112,3 +112,56 @@ footer .lastStrip .part3 ul li a{
     color: #fff;
  
 }
+/* Animation for the app store and google play images */
+footer .part3 .d-flex img {
+    transition: transform 0.3s ease;
+  }
+  
+  footer .part3 .d-flex img:hover {
+    transform: scale(1.1);
+  }
+  .newsLetterSection{
+    width: 100%;
+    height: auto;
+}
+.newsLetterSection .box{
+   background: url(	https://nest-frontend-v6.netlify.app/assets/imgs/banner/banner-10.png);
+   width: 100%;
+   height: auto;
+   padding: 60px 80px;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.newsLetterSection .box .info{
+    width: 55%;
+}
+.newsLetterSection .box .info h2{
+    font-size: 40px !important;
+    font-weight: bold;
+    color: #253D4E;
+}
+.newsLetterSection .box .info p{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #7E7E7E;
+}
+.newsLetterSection .box .info p span{
+    color: #3bb77e;
+}
+.newsLetterSection .box .img{
+    width: 45%;
+ 
+}
+.newsLetterSection .box .img img{
+   position: relative;
+   top: 60px;
+}
+
+.newsLetterSection .box .newsLetterBanner{
+    position: relative !important;
+    left: 1px !important;
+    bottom: inherit !important;
+}
+
+
+  

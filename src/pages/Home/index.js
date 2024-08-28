@@ -9,9 +9,8 @@ import Products from "../../component/products";
 import Banner4 from "../../assets/images/banner-4.png";
 import Slider from "react-slick";
 import TopProducts from "./TopProducts";
-import NewsletterImg from '../../assets/images/slider-3.png';
-import Newsletter from "../../component/newsletter";
-import Footer from "../../component/footer/footer";
+
+
 
 const Home = () => {
   var settings = {
@@ -180,26 +179,10 @@ const Home = () => {
         </div>
       </section>
  <br /> <br />
-      <section className="newsLetterSection">
-           <div className="container-fluid">
-             <div className="box d-flex align-items-center">
-                <div className="info">
-                    <h2>Stay home & get your daily <br />
-                    needs from our shop</h2>
-                    <br />
-                    <p>Start You'r Daily Shopping with <span> Nest Mart</span></p>
-                    <br /> <br />
-                    <Newsletter></Newsletter>
-                </div>
-                <div className="img">
-                  <img src={NewsletterImg} className="w-100" />
-                </div>
-             </div>
-           </div>
-      </section>
+     
 
 
-     <Footer></Footer>
+    
 
       <br /><br /><br /><br />
     </>
