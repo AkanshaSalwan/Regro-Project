@@ -191,16 +191,31 @@ body {
 }
 .rightContent .topStrip p{
   font-size: 18px;
+  color: #687188 !important;
+}
+.rightContent .topStrip .tab_{
+  width: 200px;
 }
 .rightContent .topStrip .tab_ .btn_{
   background: none !important;
   border: 1px solid rgba(0,0,0,0.1) !important;
-  padding: 10px 20px !important;
+  padding: 10px 8px !important;
   text-transform: capitalize !important;
   color: #687188 !important;
   border-radius: 10px !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
+  width: 200px;
+  height: 60px;
+}
+.rightContent .topStrip .tab_ .dropdownMenu{
+  top: 100% !important;
+}
+.rightContent .topStrip .tab_ .btn_  svg{
+  height: 20px;
+  width: 20px;
+}
+.rightContent .topStrip .tab_ .btn_ span{
+   padding: 5px !important; 
 }
 
 
-/* #10  1:01:14 */
