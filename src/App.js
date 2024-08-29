@@ -6,6 +6,7 @@ import Footer from './component/footer/footer';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
 import Listing from './pages/Listing/listing';
+import NotFound from './pages/NotFound/notfound';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
             <Route exact={true} path="/" element={<Home />}/>
             <Route exact={true} path="/listing" element={<Listing />}/>
+            <Route exact={true} path="*" element={<NotFound />}/>
         </Routes>
         <Footer></Footer>
    </BrowserRouter>
