@@ -7,3 +7,31 @@ arrows tik karna hai
 home index.js 133  index.css 39 arrow add krna hai  #7 41:26 line 
 
 navigation navbar fixing #7 45:48 header mai
+
+
+colors ke class add kiya hai    app.css mai    38 to 55 line
+/* colors */
+.text-g {
+  color: #3bb77e;
+}
+.text-org{
+  color: #FDC040 !important;
+}
+.text-light{
+  color: #B6B6B6;
+}
+.text-gray{
+  color: #7E7E7E;
+}
+.text-blue{
+  color: #253D4E;
+}
+
+/* colors end */
+
+ it is in complete #12 40:46   336 to 353 
+
+
+ also changes in details.js pages #12  40:50 
+
+ 12 55:47  baki haiii 

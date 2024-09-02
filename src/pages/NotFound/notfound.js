@@ -7,7 +7,7 @@ const NotFound = () => {
     <>
        <section className='notFound'>
          <div className='container-fluid'>
-          <img src={Img404} />
+          <img src={Img404 } />
          </div>
        </section>
     </>

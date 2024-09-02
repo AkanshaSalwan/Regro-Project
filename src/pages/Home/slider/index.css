@@ -11,7 +11,7 @@
     overflow: hidden;
     position: relative;
 }
-
+  /* special css for foer arrow */
   .homeSlider .home_Slider_main .slick-prev, 
  .homeSlider .home_Slider_main .slick-next {
     position: absolute;

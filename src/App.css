@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +11,7 @@
 }
 body {
   font-family: "Robot", sans-serif;
+  font-size: 16px;
 }
 #root {
   zoom: 90%;
@@ -34,9 +39,46 @@ body {
 .bg-g, .bg-success {
   background: #3bb77e !important;
 }
+/* colors */
 .text-g {
   color: #3bb77e;
 }
+.text-org{
+  color: #FDC040 !important;
+}
+.text-light{
+  color: #B6B6B6 !important;
+}
+.text-gray{
+  color: #7E7E7E !important;
+}
+.text-blue{
+  color: #253D4E !important;
+}
+
+/* colors end */
+
+/*  */
+/* .slick-prev, 
+ .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3bb77e;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+ .slick-prev {
+    left: 10px;
+}
+ .slick-next {
+    right: 10px;
+    
+}  */
+/*  */
 .hd {
   font-size: 38px;
   font-weight: 600;
@@ -86,7 +128,9 @@ body {
   color: #3bb77e;
 }
 
-
+.detailsContainer{
+  max-width: 90%;
+}
 .sidebarWrapper{
   max-width: 20%;
   flex: 0 0 20%;
@@ -217,5 +261,104 @@ body {
 .rightContent .topStrip .tab_ .btn_ span{
    padding: 5px !important; 
 }
+.breadcrumbWrapper{
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0,0,0.0.1) !important;
+}
+.breadcrumb2{
+  background: none !important;
+  padding: 0px !important;
+}
+.breadcrumb2 li{
+ 
+  font-size: 22px !important;
+  color: #7E7E7E;
+}
+.breadcrumb2 li a{
+  color: #3bb77e !important;
+  text-decoration: none !important;
+  padding: 0px 25px 0px 0px !important;
+  display: block;
+  position: relative;
+}
+.breadcrumb2 li a:hover{
+  color: #FDC040 !important;
+}
+
+.detailsPage .productInfo p{
+  color: #7E7E7E;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
 
 
+.detailsPage .productInfo h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+.detailsPage .productInfo .priceSec .priceLarge{
+  font-size: 58px;
+  font-weight: bold;
+}
+.detailsPage .productInfo .priceSec .text-org{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+ 
+}
+.detailsPage .productInfo .priceSec .text-light{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 1px
+}
+.productZoom{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.zoomSlider .slick-prev, 
+ .zoomSlider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3bb77e;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.zoomSlider .slick-prev {
+    left: -7% !important;
+}
+.zoomSlider .slick-next {
+    right:  -7% !important;  
+}  
+.zoomSlider{
+  padding-top: 30px;
+}
+/* here is also changes #12 47:10*/
+.zoomSlider .slick-slide .item{
+  margin-right: 20px !important;
+  overflow: hidden;
+  border-radius: 10px;
+ 
+}
+/* chnages  #12 47:20 remains */
+.zoomSlider .item img{
+  width: 100px !important;
+  height: 70px !important;
+ 
+}
+.zoomSlider .slick-current{
+  border: 1px solid #3bb77e !important;
+}
+
+/* it is in complete #12 40:46   40:53 336 to 353 */
