@@ -11,7 +11,16 @@ import img3 from "../../assets/images/fruit2.jpg";
 
 const DetailsPage = () => {
 
-const zoomSlider=useRef();
+  //
+  // const goto=(index)=>{}
+    const [zoomImage, setZoomImage] = useState('https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-16-2.jpg');
+    const [bigImageSize,setBigImage]= useState([1500,1500]);
+    const [smlImageSize,setSmlImage]= useState([150,1500]);
+
+  const zoomSlider = useRef(); 
+    
+
+
 
   var settings = {
     dots: false,
@@ -22,11 +31,9 @@ const zoomSlider=useRef();
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows: true,
   };
-  const [zoomImage, setZoomImage] = useState();
-  const goto=(index)=>{
-   
-    
-  }
+ const goto=(index)=>{
+  alert(index)
+ }
 
   return (
     <>
@@ -47,7 +54,7 @@ const zoomSlider=useRef();
 
         <div className="container-fluid detailsContainer">
           <div className="row pt-3 pb-3">
-            <div className="col-md-10 leftPart">
+            <div className="col-md-9 leftPart">
               <div className="row">
                 {/* productZoom code start*/}
                 <div className="col-md-5">
@@ -58,6 +65,8 @@ const zoomSlider=useRef();
                       src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-16-2.jpg"
                     />
                   </div>
+
+                  {/* 56:02 12 */}
                   <Slider {...settings} className="zoomSlider" ref={zoomSlider}>
                     <div className="item">
                       <img src={img1} className="w-100" onClick={()=>goto(0)}/>
@@ -111,6 +120,12 @@ const zoomSlider=useRef();
                     modi, quasi,
                     <br /> odio minus dolore impedit fuga eum eligendi.
                   </p>
+
+                  <br />
+
+                  <div className="align-items-center">
+                          {/* 12   1:12:26 */}
+                  </div>
                 </div>
                 {/* productinfo code end*/}
               </div>
