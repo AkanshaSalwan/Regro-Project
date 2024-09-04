@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import img1 from "../../assets/images/fruit.jpg";
 import img2 from "../../assets/images/fruit1.jpg";
 import img3 from "../../assets/images/fruit2.jpg";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const DetailsPage = () => {
@@ -17,11 +19,10 @@ const DetailsPage = () => {
     const [bigImageSize,setBigImage]= useState([1500,1500]);
     const [smlImageSize,setSmlImage]= useState([150,1500]);
 
+    const [activeSize, setActiveSize] = useState(0);
+
   const zoomSlider = useRef(); 
     
-
-
-
   var settings = {
     dots: false,
     infinite: false,
@@ -31,8 +32,13 @@ const DetailsPage = () => {
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows: true,
   };
+
  const goto=(index)=>{
-  alert(index)
+  alert(index)  //setZoom(url);
+ }
+
+ const isActive=(index)=>{
+  setActiveSize(index);
  }
 
   return (
@@ -123,8 +129,24 @@ const DetailsPage = () => {
 
                   <br />
 
-                  <div className="align-items-center">
-                          {/* 12   1:12:26 */}
+                  <div className="productSize d-flex align-items-center">
+                        <span>Size / Weight:</span>
+                        <ul className="list list-inline mb-0 pl-4">
+                        <li className="list-inline-item"> <a className={`tag ${activeSize===0 ? 'active': ''}`}  onClick={()=>isActive(0)}>50g</a></li>
+                        <li className="list-inline-item"> <a  className={`tag ${activeSize===1 ? 'active': ''}`}  onClick={()=>isActive(1)}>60g</a></li>
+                        <li className="list-inline-item"> <a  className={`tag ${activeSize===2 ? 'active': ''}`}  onClick={()=>isActive(2)}>80g</a></li>
+                        <li className="list-inline-item"> <a  className={`tag ${activeSize===3 ? 'active': ''}`}  onClick={()=>isActive(3)}>100g</a></li>
+                        <li className="list-inline-item"> <a  className={`tag ${activeSize===4 ? 'active': ''}`}  onClick={()=>isActive(4)}>150g</a></li>
+                        </ul> 
+                  </div>
+
+
+                  <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
+                      <div className="counterSec">
+                        <input type="number" />
+                        <span className="arrow plus ">< IoIosArrowUp></IoIosArrowUp></span>
+                        <span className=" arrow minus"><IoIosArrowDown></IoIosArrowDown></span>
+                      </div>
                   </div>
                 </div>
                 {/* productinfo code end*/}
