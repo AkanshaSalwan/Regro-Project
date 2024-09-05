@@ -20,6 +20,8 @@ const DetailsPage = () => {
     const [smlImageSize,setSmlImage]= useState([150,1500]);
 
     const [activeSize, setActiveSize] = useState(0);
+    
+    const [inputValue, setinputValue] = useState(1);
 
   const zoomSlider = useRef(); 
     
@@ -39,6 +41,13 @@ const DetailsPage = () => {
 
  const isActive=(index)=>{
   setActiveSize(index);
+ }
+
+ const plus=()=>{
+   setinputValue(inputValue+1)
+ }
+ const minus=()=>{
+  setinputValue(inputValue-1)
  }
 
   return (
@@ -143,9 +152,9 @@ const DetailsPage = () => {
 
                   <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
                       <div className="counterSec">
-                        <input type="number" />
-                        <span className="arrow plus ">< IoIosArrowUp></IoIosArrowUp></span>
-                        <span className=" arrow minus"><IoIosArrowDown></IoIosArrowDown></span>
+                        <input type="number" value={inputValue} />
+                        <span className="arrow plus" onClick={plus}>< IoIosArrowUp></IoIosArrowUp></span>
+                        <span className=" arrow minus" onClick={minus}><IoIosArrowDown></IoIosArrowDown></span>
                       </div>
                   </div>
                 </div>
