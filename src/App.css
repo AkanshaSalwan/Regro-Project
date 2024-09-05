@@ -39,6 +39,15 @@ body {
 .bg-g, .bg-success {
   background: #3bb77e !important;
 }
+.btn-border{
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  color: #7E7E7E !important;
+}
+.btn-border:hover{
+  border: 1px solid #3bb77e !important;
+  background: #3bb77e !important;
+  color: #fff !important;
+}
 /* colors */
 .text-g {
   color: #3bb77e;
@@ -419,10 +428,12 @@ input::-webkit-outer-spin-button,
 .addCartSection .counterSec input{
   width: 80px;
   height: 40px;
-  padding: 5px;
+  padding: 9px;
   border: 0px;
   outline: none;
   align-items: center;
+  justify-content: center;
+ 
 }
 .addCartSection .counterSec{
   position: relative;
@@ -439,7 +450,25 @@ input::-webkit-outer-spin-button,
   bottom: -2px;
   right: 10px;
 }
-
-
+.addToCartBtn svg{
+  font-size: 28px !important;
+  margin-right: 8px;
+}
+.addCartSection button{
+  height: 50px;
+}
+.addCartSection button{
+  height: 50px;
+  min-width: inherit !important;
+}
+.addCartSection button svg{
+  font-size: 28px !important;
+}
+.addCartSection button.move{
+  position: relative;
+} 
+.addCartSection button:hover{
+  transform: translateY(-5px);
+}
 
  

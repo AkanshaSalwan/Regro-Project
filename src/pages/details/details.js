@@ -9,7 +9,11 @@ import img2 from "../../assets/images/fruit1.jpg";
 import img3 from "../../assets/images/fruit2.jpg";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { Button } from "@mui/material";
+import { BsCart3 } from "react-icons/bs";
+import { FaRegHeart } from "react-icons/fa6";
+import { PiShuffleFill } from "react-icons/pi";
+import Sidebar from "../../component/Sidebar/sidebar";
 
 const DetailsPage = () => {
 
@@ -153,19 +157,27 @@ const DetailsPage = () => {
 
 
                   <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
-                      <div className="counterSec">
+                      <div className="counterSec mr-3">
                         <input type="number" value={inputValue} />
                         <span className="arrow plus" onClick={plus}>< IoIosArrowUp></IoIosArrowUp></span>
                         <span className=" arrow minus" onClick={minus}><IoIosArrowDown></IoIosArrowDown></span>
                       </div>
+
+
+
+                      <Button className="btn-g btn-lg addToCartBtn"><span><BsCart3></BsCart3></span>Add To Cart</Button>
+
+                      <Button className="move btn-lg addToCartBtn ml-3 btn-border"><FaRegHeart></FaRegHeart></Button>
+
+                      <Button className="move btn-lg addToCartBtn ml-3 btn-border"><PiShuffleFill></PiShuffleFill></Button>
                   </div>
                 </div>
                 {/* productinfo code end*/}
               </div>
             </div>
 
-            <div className="col-md-3 rightPart">
-
+            <div className="col-md-3 rightPart sidebarWrapper">
+                <Sidebar></Sidebar>
             </div>
           </div>
         </div>
