@@ -302,8 +302,9 @@ body {
   margin-bottom: 0rem;
 }
 .detailsContainer{
-  max-width: 90%;
+  max-width: 85%;
   padding: 30px 0px;
+  margin: auto;
 }
 .detailsPage .productInfo {
   padding-left: 50px;
@@ -358,24 +359,37 @@ body {
 .zoomSlider{
   padding-top: 30px;
 }
-/* here is also changes #12 47:10*/
-.zoomSlider .slick-slide .item{
-  margin-right: 20px !important;
-  overflow: hidden;
-  border-radius: 10px;
+
+.zoomSlider .slick-slide{
+ padding-right: 15px !important;
  
 }
-/* chnages  #12 47:20 remains */
-.zoomSlider .item img{
-  width: 100px !important;
-  height: 70px !important;
- 
+.zoomSlider .item{
+ border: 1px solid transparent !important;
+ overflow: hidden;
+ border-radius: 15px;
 }
-.zoomSlider .slick-current{
+.zoomSlider .slick-current .item{
   border: 1px solid #3bb77e !important;
 }
+.zoomSlider .slick-arrow{
+  top: 55% !important;
+  zoom: 80% !important;
+}
+.zoomSlider .slick-arrow.slick-next{
+  right: -5% !important;
+}
+.zoomSlider .slick-arrow.slick-prev{
+  left: -5% !important;
+}
+/* .zoomSlider .item img{
+  width: 100px !important;
+  height: 70px !important;
 
-/* it is in complete #12 40:46   40:53 336 to 353 */
+} */
+
+
+
 
 
 .productSize{
