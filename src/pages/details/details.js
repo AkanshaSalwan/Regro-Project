@@ -47,7 +47,9 @@ const DetailsPage = () => {
    setinputValue(inputValue+1)
  }
  const minus=()=>{
-  setinputValue(inputValue-1)
+  if(inputValue!==1){
+    setinputValue(inputValue-1)
+  }
  }
 
   return (
