@@ -365,12 +365,12 @@ body {
  
 }
 .zoomSlider .item{
- border: 1px solid transparent !important;
+ border: 2px solid transparent !important;
  overflow: hidden;
  border-radius: 15px;
 }
 .zoomSlider .slick-current .item{
-  border: 1px solid #3bb77e !important;
+  border: 2px solid #3bb77e !important;
 }
 .zoomSlider .slick-arrow{
   top: 55% !important;
