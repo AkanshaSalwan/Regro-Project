@@ -24,6 +24,7 @@ const DetailsPage = () => {
   const [smlImageSize, setSmlImageSize] = useState([150, 1500]);
 
   const zoomSlider=useRef();
+  const zoomSliderBig=useRef();
 
 
  
@@ -38,19 +39,32 @@ const DetailsPage = () => {
 
  
 
+  var settings2 = {
+    dots: false,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false, //slider slider automatic no need to tap  on slide button
+    arrows: false,
+   
+  };
   var settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows: true,
   };
 
   const goto=(url, index)=>{
-    setZoomImage(url);
+    setTimeout(()=>{
+      setZoomImage(url);
+    },200)
     zoomSlider.current.slickGoTo(index);
+    zoomSliderBig.current.slickGoTo(index);
   };
 
   const isActive = (index) => {
@@ -88,12 +102,14 @@ const DetailsPage = () => {
             {/* productZoom code start*/}
             <div className="col-md-5">
               <div className="productZoom">
-                <InnerImageZoom
+              <Slider {...settings2 } className="zoomSliderBig" ref={zoomSliderBig}>
+                  <div className="item">
+                  <InnerImageZoom
                   zoomType="hover"
                   zoomScale={1}
-                  src={`${zoomImage}?im=Resize=(${bigImageSize[0]}, ${bigImageSize[1]})`}
-                  
-                />
+                  src={`${zoomImage}?im=Resize=(${bigImageSize[0]}, ${bigImageSize[1]})`} />
+                  </div>
+              </Slider>
               </div>
 
               {/* 56:02 12 */}
@@ -256,6 +272,11 @@ const DetailsPage = () => {
           {/* <div className="col-md-3 rightPart sidebarWrapper">
                 <Sidebar></Sidebar>
             </div> */}
+
+          <div className="card mt-5 p-5 detailsPageTabs">
+
+          </div>
+
         </div>
       </section>
     </>
