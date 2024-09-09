@@ -487,4 +487,30 @@ input::-webkit-outer-spin-button,
   transform: translateY(-5px);
 }
 
+
+.detailsPageTabs{
+  border-radius: 25px !;
+}
+.customTabs ul li{
+  margin-right: 30px !important;
+}
+.customTabs ul li button:hover{
+  color: #3bb77e;
+}
+.customTabs ul li button{
+  padding: 10px 25px !important;
+  border: 1px solid rgba(0,0,0,0.2) !important;
+  font-size: 20px !important;
+  text-transform: capitalize !important;
+  border-radius: 30px !important;
+  color: #7E7E7E;
+}
+.tabContent p{
+  color: #7E7E7E;
+}
+.tabContent h2{
+  color: #253D4E;
+}
+
+
  
