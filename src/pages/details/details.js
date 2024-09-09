@@ -12,6 +12,7 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
 import { PiShuffleFill } from "react-icons/pi";
 import Sidebar from "../../component/Sidebar/sidebar";
+import Products from "../../component/products";
 
 const DetailsPage = () => {
   // const goto=(index)=>{}
@@ -22,7 +23,7 @@ const DetailsPage = () => {
   const [bigImageSize, setBigImageSize] = useState([1500, 1500]);
   const [smlImageSize, setSmlImageSize] = useState([150, 1500]);
 
- const [activeTabs, setActiveTabs] = useState(0);
+ const [activeTabs, setActiveTabs] = useState(2);
 
   const zoomSlider = useRef();
   const zoomSliderBig = useRef();
@@ -48,6 +49,17 @@ const DetailsPage = () => {
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows: true,
+  };
+
+  var related = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    fade: false, //slider slider automatic no need to tap  on slide button
+    arrows: true,
+    // autoplay:2000
   };
 
   const goto = (url, index) => {
@@ -515,9 +527,49 @@ const DetailsPage = () => {
                 </div>
               </div>
              }
+              
 
+            {
+              activeTabs === 2 &&
+
+              <div className="tabContent">
+              <h3>Customer questions & answers</h3>
+            </div>
+            
+            }
+         
               
             </div>
+          </div>
+
+          <div className="relatedProducts pt-5 pb-4">
+            <h2 className="hd mb-0 mt-0">Related products</h2>
+          <Slider {...related} className="prodSlider">
+                {/* slider add krna hia #7 41:26 */}
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+                <div className="item">
+                  <Products></Products>
+                </div>
+              </Slider>
+
+              {/*1:01:31  */}
           </div>
         </div>
       </section>

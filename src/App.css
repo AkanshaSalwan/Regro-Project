@@ -512,5 +512,13 @@ input::-webkit-outer-spin-button,
   color: #253D4E;
 }
 
+.relatedProducts .item{
+  padding: 15px 5px;
+  padding-right: 25px !important;
+}
+.relatedProducts  h2{
+  color: #253D4E;
+}
+
 
  

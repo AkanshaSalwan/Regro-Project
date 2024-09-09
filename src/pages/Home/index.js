@@ -107,18 +107,7 @@ const Home = () => {
               <li className="list-inline-item">
                 <a href="cursor">New added</a>
               </li>
-              {/* <li className="list-inline-item">
-                <a href="cursor">Pet Foods</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="cursor">Meats</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="cursor">Vegetables</a>
-              </li>
-              <li className="list-inline-item">
-                <a href="cursor">Fruits</a>
-              </li> */}
+             
             </ul>
           </div>
           <br />
