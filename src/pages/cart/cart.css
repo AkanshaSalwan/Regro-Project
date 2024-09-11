@@ -3,3 +3,32 @@
     height: auto;
     padding: 35px 0px;
 }
+.cartSection .clearCart{
+   font-weight: 600;
+   font-size: 18px;
+}
+.cartSection .clearCart svg{
+    font-size: 25px !important;
+}
+.cartWrapper table thead{
+    background-color: #ececec;
+    overflow: hidden;
+    
+}
+.cartWrapper table thead th:first-child{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+} 
+.cartWrapper table thead th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+} 
+.cartWrapper  tbody td .img{
+    width: 80px;
+    padding: 10px;
+}
+
+
+
+
+
