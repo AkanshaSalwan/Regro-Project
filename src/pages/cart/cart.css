@@ -23,12 +23,27 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 } 
-
+.cartWrapper  table  tbody  td{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 24px;
+}
+.cartWrapper  table  tbody  td span{
+    font-weight: 600;
+    font-size: 25px;
+}
 .cartWrapper  table  tbody  td .img{
     max-width: 120px;
     padding: 5px;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
+}
+.cartWrapper  table  tbody  td .info a{
+    text-decoration: none;
+}
+.cartWrapper  table  tbody  td .info a h4{
+    font-size: 18px;
+    font-weight: 550;
 }
 
 

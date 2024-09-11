@@ -1,11 +1,24 @@
-import React from "react";
+import  {useState } from "react";
 import "./cart.css";
 import { Link } from "react-router-dom";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 
 import Rating from "@mui/material/Rating";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
+import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined'
 
 const Cart = () => {
+  const [inputValue, setinputValue] = useState(1);
+
+  const plus = () => {
+    setinputValue(inputValue + 1);
+  };
+  const minus = () => {
+    if (inputValue !== 1) {
+      setinputValue(inputValue - 1);
+    }
+  };
   return (
     <>
       <div className="breadcrumbWrapper mb-4">
@@ -70,11 +83,33 @@ const Cart = () => {
                                   Field Roast Chao Cheese Creamy Original
                                 </h4>
                               </Link>
-                              <Rating name="read-only" value={4.5} readOnly />{" "}
-                              <span className="text-light">(4.5)</span>
+                              <Rating name="read-only" value={4.0} readOnly />{" "}
+                              <span className="text-light">(4.0)</span>
                             </div>
                           </div>
                         </td>
+
+                        <td className="text-gray">$2.51</td>
+                        <td>
+                        
+                          <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
+                            <div className="counterSec mr-3">
+                              <input type="number" value={inputValue} />
+                              <span className="arrow plus" onClick={plus}>
+                                <IoIosArrowUp></IoIosArrowUp>
+                              </span>
+
+                              <span className=" arrow minus" onClick={minus}>
+                                <IoIosArrowDown></IoIosArrowDown>
+                              </span>
+                            </div>
+                          </div>
+                        </td>
+                       
+                       <td><span className="text-g">$2.56</span></td>
+
+                       <td><span className="cursor"><DeleteForeverOutlinedIcon></DeleteForeverOutlinedIcon></span></td>
+                         
                       </tr>
                     </tbody>
                   </table>
@@ -82,7 +117,9 @@ const Cart = () => {
               </div>
             </div>
 
-            <div className="col-md-5"></div>
+            <div className="col-md-5">
+                {/* 26:47 #14 */}
+            </div>
           </div>
         </div>
       </section>

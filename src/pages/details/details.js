@@ -23,7 +23,7 @@ const DetailsPage = () => {
   const [bigImageSize, setBigImageSize] = useState([1500, 1500]);
   const [smlImageSize, setSmlImageSize] = useState([150, 1500]);
 
- const [activeTabs, setActiveTabs] = useState(2);
+  const [activeTabs, setActiveTabs] = useState(2);
 
   const zoomSlider = useRef();
   const zoomSliderBig = useRef();
@@ -259,7 +259,7 @@ const DetailsPage = () => {
                 <span>Size / Weight:</span>
                 <ul className="list list-inline mb-0 pl-4">
                   <li className="list-inline-item">
-                    {" "}
+                   
                     <a
                       className={`tag ${activeSize === 0 ? "active" : ""}`}
                       onClick={() => isActive(0)}
@@ -268,7 +268,7 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    {" "}
+                  
                     <a
                       className={`tag ${activeSize === 1 ? "active" : ""}`}
                       onClick={() => isActive(1)}
@@ -277,7 +277,7 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    {" "}
+                  
                     <a
                       className={`tag ${activeSize === 2 ? "active" : ""}`}
                       onClick={() => isActive(2)}
@@ -286,7 +286,7 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    {" "}
+                   
                     <a
                       className={`tag ${activeSize === 3 ? "active" : ""}`}
                       onClick={() => isActive(3)}
@@ -295,7 +295,7 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    {" "}
+                  
                     <a
                       className={`tag ${activeSize === 4 ? "active" : ""}`}
                       onClick={() => isActive(4)}
@@ -304,8 +304,8 @@ const DetailsPage = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-
+           </div>
+{/* Counter section */}
               <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
                 <div className="counterSec mr-3">
                   <input type="number" value={inputValue} />
@@ -333,6 +333,8 @@ const DetailsPage = () => {
                 </Button>
               </div>
             </div>
+
+            {/* Counter section end*/}
             {/* productinfo code end*/}
           </div>
 
@@ -344,232 +346,223 @@ const DetailsPage = () => {
             <div className="customTabs">
               <ul className="list list-inline">
                 <li className="list-inline-item">
-                  <Button onClick={()=>setActiveTabs(0)}>Description</Button>
+                  <Button onClick={() => setActiveTabs(0)}>Description</Button>
                 </li>
                 <li className="list-inline-item">
-                  <Button onClick={()=>setActiveTabs(1)}>Additional info</Button>
+                  <Button onClick={() => setActiveTabs(1)}>
+                    Additional info
+                  </Button>
                 </li>
                 <li className="list-inline-item">
-                  <Button onClick={()=>setActiveTabs(2)}>Reviews (3)</Button>
+                  <Button onClick={() => setActiveTabs(2)}>Reviews (3)</Button>
                 </li>
               </ul>
               <br />
 
-              {
-                activeTabs === 0 &&
-
+              {activeTabs === 0 && (
                 <div className="tabContent">
-                <p>
-                  Uninhibited carnally hired played in whimpered dear gorilla
-                  koala depending and much yikes off far quetzal goodness and
-                  from for grimaced goodness unaccountably and meadowlark near
-                  unblushingly crucial scallop tightly neurotic hungrily some
-                  and dear furiously this apart.
-                </p>
-                <p>
-                  Spluttered narrowly yikes left moth in yikes bowed this that
-                  grizzly much hello on spoon-fed that alas rethought much
-                  decently richly and wow against the frequent fluidly at
-                  formidable acceptably flapped besides and much circa far over
-                  the bucolically hey precarious goldfinch mastodon goodness
-                  gnashed a jellyfish and one however because.
-                </p>
+                  <p>
+                    Uninhibited carnally hired played in whimpered dear gorilla
+                    koala depending and much yikes off far quetzal goodness and
+                    from for grimaced goodness unaccountably and meadowlark near
+                    unblushingly crucial scallop tightly neurotic hungrily some
+                    and dear furiously this apart.
+                  </p>
+                  <p>
+                    Spluttered narrowly yikes left moth in yikes bowed this that
+                    grizzly much hello on spoon-fed that alas rethought much
+                    decently richly and wow against the frequent fluidly at
+                    formidable acceptably flapped besides and much circa far
+                    over the bucolically hey precarious goldfinch mastodon
+                    goodness gnashed a jellyfish and one however because.
+                  </p>
 
-                <br />
+                  <br />
 
-                <h2>Packaging & Delivery</h2>
-                <hr />
-                <p>
-                  Less lion goodness that euphemistically robin expeditiously
-                  bluebird smugly scratched far while thus cackled sheepishly
-                  rigid after due one assenting regarding censorious while
-                  occasional or this more crane went more as this less much amid
-                  overhung anathematic because much held one exuberantly sheep
-                  goodness so where rat wry well concomitantly. Scallop or far
-                  crud plain remarkably far by thus far iguana lewd precociously
-                  and and less rattlesnake contrary caustic wow this near alas
-                  and next and pled the yikes articulate about as less cackled
-                  dalmatian in much less well jeering for the thanks blindly
-                  sentimental whimpered less across objectively fanciful
-                  grimaced wildly some wow and rose jeepers outgrew lugubrious
-                  luridly irrationally attractively dachshund.
-                </p>
+                  <h2>Packaging & Delivery</h2>
+                  <hr />
+                  <p>
+                    Less lion goodness that euphemistically robin expeditiously
+                    bluebird smugly scratched far while thus cackled sheepishly
+                    rigid after due one assenting regarding censorious while
+                    occasional or this more crane went more as this less much
+                    amid overhung anathematic because much held one exuberantly
+                    sheep goodness so where rat wry well concomitantly. Scallop
+                    or far crud plain remarkably far by thus far iguana lewd
+                    precociously and and less rattlesnake contrary caustic wow
+                    this near alas and next and pled the yikes articulate about
+                    as less cackled dalmatian in much less well jeering for the
+                    thanks blindly sentimental whimpered less across objectively
+                    fanciful grimaced wildly some wow and rose jeepers outgrew
+                    lugubrious luridly irrationally attractively dachshund.
+                  </p>
 
-                <br />
+                  <br />
 
-                <h2>Suggested Use</h2>
-                <br />
-                <p>Refrigeration not necessary.</p>
+                  <h2>Suggested Use</h2>
+                  <br />
+                  <p>Refrigeration not necessary.</p>
 
-                <p>Stir before serving</p>
+                  <p>Stir before serving</p>
 
-                <br />
+                  <br />
 
-                <h2>Other Ingredients</h2>
-                <br />
-                <p>Organic raw pecans, organic raw cashews.</p>
+                  <h2>Other Ingredients</h2>
+                  <br />
+                  <p>Organic raw pecans, organic raw cashews.</p>
 
-                <p>
-                  his butter was produced using a LTG (Low Temperature Grinding)
-                  process
-                </p>
+                  <p>
+                    his butter was produced using a LTG (Low Temperature
+                    Grinding) process
+                  </p>
 
-                <p>
-                  Made in machinery that processes tree nuts but does not
-                  process peanuts, gluten, dairy or soy
-                </p>
+                  <p>
+                    Made in machinery that processes tree nuts but does not
+                    process peanuts, gluten, dairy or soy
+                  </p>
 
-                <br />
-                <h2>Warnings</h2>
-                <br />
-                <p>
-                  Oil separation occurs naturally. May contain pieces of shell.
-                </p>
-              </div>
-              }
-
-             
-             {
-              activeTabs === 1 &&
-
-              <div className="tabContent">
-                <div className="table-responsive">
-                  {" "}
-                  {/*boostrap classs */}
-                  <table className="table table-bordered">
-                    <tbody>
-                      <tr class="stand-up">
-                        <th>Stand Up</th>
-                        <td>
-                          <p>35″L x 24″W x 37-45″H(front to back wheel)</p>
-                        </td>
-                      </tr>
-                      <tr class="folded-wo-wheels">
-                        <th>Folded (w/o wheels)</th>
-                        <td>
-                          <p>32.5″L x 18.5″W x 16.5″H</p>
-                        </td>
-                      </tr>
-                      <tr class="folded-w-wheels">
-                        <th>Folded (w/ wheels)</th>
-                        <td>
-                          <p>32.5″L x 24″W x 18.5″H</p>
-                        </td>
-                      </tr>
-                      <tr class="door-pass-through">
-                        <th>Door Pass Through</th>
-                        <td>
-                          <p>24</p>
-                        </td>
-                      </tr>
-                      <tr class="frame">
-                        <th>Frame</th>
-                        <td>
-                          <p>Aluminum</p>
-                        </td>
-                      </tr>
-                      <tr class="weight-wo-wheels">
-                        <th>Weight (w/o wheels)</th>
-                        <td>
-                          <p>20 LBS</p>
-                        </td>
-                      </tr>
-                      <tr class="weight-capacity">
-                        <th>Weight Capacity</th>
-                        <td>
-                          <p>60 LBS</p>
-                        </td>
-                      </tr>
-                      <tr class="width">
-                        <th>Width</th>
-                        <td>
-                          <p>24″</p>
-                        </td>
-                      </tr>
-                      <tr class="handle-height-ground-to-handle">
-                        <th>Handle height (ground to handle)</th>
-                        <td>
-                          <p>37-45″</p>
-                        </td>
-                      </tr>
-                      <tr class="wheels">
-                        <th>Wheels</th>
-                        <td>
-                          <p>12″ air / wide track slick tread</p>
-                        </td>
-                      </tr>
-                      <tr class="seat-back-height">
-                        <th>Seat back height</th>
-                        <td>
-                          <p>21.5″</p>
-                        </td>
-                      </tr>
-                      <tr class="head-room-inside-canopy">
-                        <th>Head room (inside canopy)</th>
-                        <td>
-                          <p>25″</p>
-                        </td>
-                      </tr>
-                      <tr class="pa_color">
-                        <th>Color</th>
-                        <td>
-                          <p>Black, Blue, Red, White</p>
-                        </td>
-                      </tr>
-                      <tr class="pa_size">
-                        <th>Size</th>
-                        <td>
-                          <p>M, S</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <br />
+                  <h2>Warnings</h2>
+                  <br />
+                  <p>
+                    Oil separation occurs naturally. May contain pieces of
+                    shell.
+                  </p>
                 </div>
-              </div>
-             }
-              
+              )}
 
-            {
-              activeTabs === 2 &&
+              {activeTabs === 1 && (
+                <div className="tabContent">
+                  <div className="table-responsive">
+                    {" "}
+                    {/*boostrap classs */}
+                    <table className="table table-bordered">
+                      <tbody>
+                        <tr class="stand-up">
+                          <th>Stand Up</th>
+                          <td>
+                            <p>35″L x 24″W x 37-45″H(front to back wheel)</p>
+                          </td>
+                        </tr>
+                        <tr class="folded-wo-wheels">
+                          <th>Folded (w/o wheels)</th>
+                          <td>
+                            <p>32.5″L x 18.5″W x 16.5″H</p>
+                          </td>
+                        </tr>
+                        <tr class="folded-w-wheels">
+                          <th>Folded (w/ wheels)</th>
+                          <td>
+                            <p>32.5″L x 24″W x 18.5″H</p>
+                          </td>
+                        </tr>
+                        <tr class="door-pass-through">
+                          <th>Door Pass Through</th>
+                          <td>
+                            <p>24</p>
+                          </td>
+                        </tr>
+                        <tr class="frame">
+                          <th>Frame</th>
+                          <td>
+                            <p>Aluminum</p>
+                          </td>
+                        </tr>
+                        <tr class="weight-wo-wheels">
+                          <th>Weight (w/o wheels)</th>
+                          <td>
+                            <p>20 LBS</p>
+                          </td>
+                        </tr>
+                        <tr class="weight-capacity">
+                          <th>Weight Capacity</th>
+                          <td>
+                            <p>60 LBS</p>
+                          </td>
+                        </tr>
+                        <tr class="width">
+                          <th>Width</th>
+                          <td>
+                            <p>24″</p>
+                          </td>
+                        </tr>
+                        <tr class="handle-height-ground-to-handle">
+                          <th>Handle height (ground to handle)</th>
+                          <td>
+                            <p>37-45″</p>
+                          </td>
+                        </tr>
+                        <tr class="wheels">
+                          <th>Wheels</th>
+                          <td>
+                            <p>12″ air / wide track slick tread</p>
+                          </td>
+                        </tr>
+                        <tr class="seat-back-height">
+                          <th>Seat back height</th>
+                          <td>
+                            <p>21.5″</p>
+                          </td>
+                        </tr>
+                        <tr class="head-room-inside-canopy">
+                          <th>Head room (inside canopy)</th>
+                          <td>
+                            <p>25″</p>
+                          </td>
+                        </tr>
+                        <tr class="pa_color">
+                          <th>Color</th>
+                          <td>
+                            <p>Black, Blue, Red, White</p>
+                          </td>
+                        </tr>
+                        <tr class="pa_size">
+                          <th>Size</th>
+                          <td>
+                            <p>M, S</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
 
-              <div className="tabContent">
-              <h3>Customer questions & answers</h3>
-            </div>
-            
-            }
-         
-              
+              {activeTabs === 2 && (
+                <div className="tabContent">
+                  <h3>Customer questions & answers</h3>
+                </div>
+              )}
             </div>
           </div>
-           <br />
+          <br />
           <div className="relatedProducts pt-5 pb-4">
             <h2 className="hd mb-0 mt-0">Related products</h2> <br />
-          <Slider {...related} className="prodSlider">
-                {/* slider add krna hia #7 41:26 */}
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-                <div className="item">
-                  <Products></Products>
-                </div>
-              </Slider>
-
-              {/*1:01:31  */}
+            <Slider {...related} className="prodSlider">
+              {/* slider add krna hia #7 41:26 */}
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+              <div className="item">
+                <Products></Products>
+              </div>
+            </Slider>
+            {/*1:01:31  */}
           </div>
         </div>
       </section>
