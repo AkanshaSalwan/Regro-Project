@@ -8,6 +8,7 @@ import About from './pages/About/index';
 import Listing from './pages/Listing/listing';
 import NotFound from './pages/NotFound/notfound';
 import DetailsPage from './pages/details/details';
+import Cart from './pages/cart/cart';
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route exact={true} path="/listing" element={<Listing />}/>
             <Route exact={true} path="product/details" element={<DetailsPage />}/>
             <Route exact={true} path="*" element={<NotFound />}/>
+            <Route exact={true} path="/cart" element={<Cart />}/>
         </Routes>
         <Footer></Footer>
    </BrowserRouter>
