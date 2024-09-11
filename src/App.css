@@ -64,7 +64,12 @@ body {
 .text-blue{
   color: #253D4E !important;
 }
-
+.text-blue-text{
+  color: #253D4E !important;
+}
+.text-blue-text:hover{
+  color: #FDC040 !important;
+}
 /* colors end */
 
 /*  */

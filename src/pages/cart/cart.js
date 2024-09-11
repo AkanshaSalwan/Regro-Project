@@ -53,10 +53,17 @@ const Cart = () => {
                    <tbody>
                    <tr>
                         <td>
-                            <div className="img">
+                           <div className="d-flex align-items-center">
+                           <div className="img">
                                <img src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-1-1.jpg"
                                 className="w-100"/> 
                             </div>
+
+                            <div className="info pl-4">
+                                <h4 className="text-blue-text">	
+                                Field Roast Chao Cheese Creamy Original</h4>
+                            </div>
+                           </div>
                         </td>
                     </tr>
                    </tbody>

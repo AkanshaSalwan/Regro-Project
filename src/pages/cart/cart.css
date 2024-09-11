@@ -24,8 +24,10 @@
     border-bottom-right-radius: 15px;
 } 
 .cartWrapper  tbody td .img{
-    width: 80px;
-    padding: 10px;
+    max-width: 120px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 
