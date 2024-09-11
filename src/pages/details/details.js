@@ -541,9 +541,9 @@ const DetailsPage = () => {
               
             </div>
           </div>
-
+           <br />
           <div className="relatedProducts pt-5 pb-4">
-            <h2 className="hd mb-0 mt-0">Related products</h2>
+            <h2 className="hd mb-0 mt-0">Related products</h2> <br />
           <Slider {...related} className="prodSlider">
                 {/* slider add krna hia #7 41:26 */}
                 <div className="item">
