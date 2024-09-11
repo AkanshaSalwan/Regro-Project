@@ -1,7 +1,9 @@
 import React from "react";
 import "./cart.css";
 import { Link } from "react-router-dom";
-import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
+
+import Rating from "@mui/material/Rating";
 
 const Cart = () => {
   return (
@@ -33,48 +35,54 @@ const Cart = () => {
                 </div>
 
                 <span className="ml-auto clearCart d-flex align-items-center cursor">
-                    <DeleteOutlineOutlinedIcon></DeleteOutlineOutlinedIcon>Clear Cart</span>
+                  <DeleteOutlineOutlinedIcon></DeleteOutlineOutlinedIcon>Clear
+                  Cart
+                </span>
               </div>
 
               <div className="cartWrapper mt-4">
                 <div className="table-responsive">
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th className="text-blue">Product</th>
-                                <th className="text-blue">Unit Price</th>
-                                <th className="text-blue">Quantity</th>
-                                <th className="text-blue">Subtotal</th>
-                                <th className="text-blue">Remove</th>
-                            </tr>
-                        </thead>
-                    </table>
+                  <table className="table">
+                    <thead>
+                      <tr>
+                        <th className="text-blue">Product</th>
+                        <th className="text-blue">Unit Price</th>
+                        <th className="text-blue">Quantity</th>
+                        <th className="text-blue">Subtotal</th>
+                        <th className="text-blue">Remove</th>
+                      </tr>
+                    </thead>
 
-                   <tbody>
-                   <tr>
+                    <tbody>
+                      <tr>
                         <td>
-                           <div className="d-flex align-items-center">
-                           <div className="img">
-                               <img src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-1-1.jpg"
-                                className="w-100"/> 
+                          <div className="d-flex align-items-center">
+                            <div className="img">
+                              <img
+                                src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-1-1.jpg"
+                                className="w-100"
+                              />
                             </div>
 
                             <div className="info pl-4">
-                                <h4 className="text-blue-text">	
-                                Field Roast Chao Cheese Creamy Original</h4>
+                              <Link>
+                                <h4 className="text-blue-text">
+                                  Field Roast Chao Cheese Creamy Original
+                                </h4>
+                              </Link>
+                              <Rating name="read-only" value={4.5} readOnly />{" "}
+                              <span className="text-light">(4.5)</span>
                             </div>
-                           </div>
+                          </div>
                         </td>
-                    </tr>
-                   </tbody>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-
             </div>
 
-            <div className="col-md-5">
-
-            </div>
+            <div className="col-md-5"></div>
           </div>
         </div>
       </section>

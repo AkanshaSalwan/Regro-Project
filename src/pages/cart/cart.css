@@ -23,7 +23,8 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 } 
-.cartWrapper  tbody td .img{
+
+.cartWrapper  table  tbody  td .img{
     max-width: 120px;
     padding: 5px;
     border: 1px solid rgba(0,0,0,0.1);
