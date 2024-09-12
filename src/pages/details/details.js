@@ -4,7 +4,6 @@ import Rating from "@mui/material/Rating";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import Slider from "react-slick";
-
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { Button } from "@mui/material";
@@ -85,7 +84,7 @@ const DetailsPage = () => {
 
   return (
     <>
-      <section className="detailsPage">
+      <section className="detailsPage mb-5">
         <div className="breadcrumbWrapper">
           <div className="container-fluid">
             <ul className="breadcrumb breadcrumb2 mb-0">
@@ -259,7 +258,6 @@ const DetailsPage = () => {
                 <span>Size / Weight:</span>
                 <ul className="list list-inline mb-0 pl-4">
                   <li className="list-inline-item">
-                   
                     <a
                       className={`tag ${activeSize === 0 ? "active" : ""}`}
                       onClick={() => isActive(0)}
@@ -268,7 +266,6 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                  
                     <a
                       className={`tag ${activeSize === 1 ? "active" : ""}`}
                       onClick={() => isActive(1)}
@@ -277,7 +274,6 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                  
                     <a
                       className={`tag ${activeSize === 2 ? "active" : ""}`}
                       onClick={() => isActive(2)}
@@ -286,7 +282,6 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                   
                     <a
                       className={`tag ${activeSize === 3 ? "active" : ""}`}
                       onClick={() => isActive(3)}
@@ -295,7 +290,6 @@ const DetailsPage = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                  
                     <a
                       className={`tag ${activeSize === 4 ? "active" : ""}`}
                       onClick={() => isActive(4)}
@@ -304,8 +298,8 @@ const DetailsPage = () => {
                     </a>
                   </li>
                 </ul>
-           </div>
-{/* Counter section */}
+              </div>
+              {/* Counter section */}
               <div className="addCartSection pt-4 pb-4 d-flex align-items-center">
                 <div className="counterSec mr-3">
                   <input type="number" value={inputValue} />
@@ -530,22 +524,153 @@ const DetailsPage = () => {
 
               {activeTabs === 2 && (
                 <div className="tabContent">
-                    <div className="row">
-                      <div className="col-md-9">
-                        <h3>Customer question & answer</h3>
-                          <br></br>                                                               
-                        <div className="card p-3 reviewsCard">
+                  <div className="row">
+                    <div className="col-md-8">
+                      <h3>Customer question & answer</h3>
+                      <br></br>
+                      <div className="card p-4 reviewsCard flex-row">
+                        <div className="image">
                           <div className="rounded-circle">
-                              <img src="https://nest-frontend-v6.netlify.app/assets/imgs/blog/author-2.png" />
+                            <img src="https://nest-frontend-v6.netlify.app/assets/imgs/blog/author-2.png" />
+                          </div>
+                          <br />
+                          <span
+                            className="text-g d-block text-center 
+                          font-weight-bold"
+                          >
+                            Sienna
+                          </span>
+                        </div>
+
+                        <div className="info pl-5">
+                          <div className="d-flex align-items-center">
+                          <h5 className="text-light">
+                            December 4, 2024 at 3:12 pm
+                          </h5>
+                         <div className="ml-auto">
+                         <Rating name="read-only" value={4} readOnly />
+                         </div>
+                          </div>
+                         
+                          <p className="text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Delectus, suscipit exercitationem accusantium
+                            obcaecati quos voluptate nesciunt facilis itaque
+                            modi commodi dignissimos sequi repudiandae minus ab
+                            deleniti totam officia id incidunt? Reply
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="card p-4 reviewsCard flex-row">
+                        <div className="image">
+                          <div className="rounded-circle">
+                            <img src="https://nest-frontend-v6.netlify.app/assets/imgs/blog/author-2.png" />
+                          </div>
+                          <br />
+                          <span
+                            className="text-g d-block text-center 
+                          font-weight-bold"
+                          >
+                            Sienna
+                          </span>
+                        </div>
+
+                        <div className="info pl-5">
+                          <div className="d-flex align-items-center">
+                          <h5 className="text-light">
+                            December 4, 2024 at 3:12 pm
+                          </h5>
+                         <div className="ml-auto">
+                         <Rating name="read-only" value={4} readOnly />
+                         </div>
+                          </div>
+                         
+                          <p className="text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Delectus, suscipit exercitationem accusantium
+                            obcaecati quos voluptate nesciunt facilis itaque
+                            modi commodi dignissimos sequi repudiandae minus ab
+                            deleniti totam officia id incidunt? Reply
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="card p-4 reviewsCard flex-row">
+                        <div className="image">
+                          <div className="rounded-circle">
+                            <img src="https://nest-frontend-v6.netlify.app/assets/imgs/blog/author-2.png" />
+                          </div>
+                          <br />
+                          <span
+                            className="text-g d-block text-center 
+                          font-weight-bold"
+                          >
+                            Sienna
+                          </span>
+                        </div>
+
+                        <div className="info pl-5">
+                          <div className="d-flex align-items-center">
+                          <h5 className="text-light">
+                            December 4, 2024 at 3:12 pm
+                          </h5>
+                         <div className="ml-auto">
+                         <Rating name="read-only" value={4} readOnly />
+                         </div>
+                          </div>
+                         
+                          <p className="text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Delectus, suscipit exercitationem accusantium
+                            obcaecati quos voluptate nesciunt facilis itaque
+                            modi commodi dignissimos sequi repudiandae minus ab
+                            deleniti totam officia id incidunt? Reply
+                          </p>
+                        </div>
+                      </div>
+
+                      <br />
+                      <br />
+
+                      <form className="reviewForm">
+                        <h4 className="text-blue font-weight-bold"> Add a review</h4>
+                        <Rating name="read-only" value={0.5} readOnly />
+
+                        <div className="form-group">
+                        {/* <textarea className="form-control" placeholder="Write Comment"> </textarea> */}
+                        <input type="text" className="form-control form-control-1" placeholder="Write Comment" />
+                        </div>
+
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <input type="text" className="form-control" placeholder="Name" />
+                            </div>
+                          </div>
+
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <input type="text" className="form-control"  placeholder="Email"/>
+                            </div>
                           </div>
                         </div>
 
-                      </div>
+                        <div className="form-group">
+                              <input type="text" className="form-control" placeholder="Website" />
+                        </div>   
+                        <br />
 
-                      <div className="col-md-3">
-                        
-                      </div>
+                        <Button className="btn-g btn-lg">Submit Review</Button>                       
+                         
+                      </form>
+
                     </div>
+
+                    <div className="col-md-3">
+
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

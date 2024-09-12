@@ -36,9 +36,13 @@ body {
   background: #FDC040 !important;
   color: #fff !important;
 }
+.btn-lg{
+  font-size: 22px !important;
+}
 .bg-g, .bg-success {
   background: #3bb77e !important;
 }
+
 .btn-border{
   border: 1px solid rgba(0,0,0,0.1) !important;
   color: #7E7E7E !important;
@@ -513,7 +517,12 @@ input::-webkit-outer-spin-button,
   border-radius: 30px !important;
   color: #7E7E7E;
 }
-
+.reviewsCard{
+  margin-bottom: 25px !important;
+}
+.reviewsCard .image{
+  width: 100px;
+}
 .reviewsCard .rounded-circle{
   display: flex;
   align-items: center;
@@ -522,12 +531,26 @@ input::-webkit-outer-spin-button,
   width: 100px;
   height: 100px;
 }
+
 .reviewsCard .rounded-circle img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.reviewForm .form-group{
+  margin-bottom: 25px;
+}
+.reviewForm .form-group .form-control{
+  height: 80px;
+  font-size: 18px;
+  border-radius: 7px !important;
+}
+.reviewForm .form-group .form-control-1{
+  height: 160px;
+  padding-bottom: 90px;
+  border-radius: 7px !important;
+}
 
 .tabContent p{
   color: #7E7E7E;
