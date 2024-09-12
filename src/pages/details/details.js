@@ -530,7 +530,22 @@ const DetailsPage = () => {
 
               {activeTabs === 2 && (
                 <div className="tabContent">
-                  <h3>Customer questions & answers</h3>
+                    <div className="row">
+                      <div className="col-md-9">
+                        <h3>Customer question & answer</h3>
+                          <br></br>                                                               
+                        <div className="card p-3 reviewsCard">
+                          <div className="rounded-circle">
+                              <img src="https://nest-frontend-v6.netlify.app/assets/imgs/blog/author-2.png" />
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div className="col-md-3">
+                        
+                      </div>
+                    </div>
                 </div>
               )}
             </div>
