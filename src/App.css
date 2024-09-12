@@ -519,6 +519,8 @@ input::-webkit-outer-spin-button,
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 .reviewsCard .rounded-circle img{
   width: 100%;
