@@ -551,8 +551,8 @@ input::-webkit-outer-spin-button,
   padding-bottom: 90px;
   border-radius: 7px !important;
 }
-.progress-bar{
-  
+.progressBarBox{
+margin-bottom: 15px;
 }
 
 .tabContent p{

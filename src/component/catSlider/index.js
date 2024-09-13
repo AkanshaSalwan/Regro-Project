@@ -30,7 +30,7 @@ const CatSlider = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
+    slidesToShow: 7,
     slidesToScroll: 1,
     fade: false, //slider slider automatic no need to tap  on slide button
     arrows:true,
@@ -44,154 +44,91 @@ const CatSlider = () => {
           <h2 className="hd">Featured Categories</h2>
          
           <Slider {...settings} className="cat_Slider_Main">
-            {
+            {/* {
               itemBg.length!==0 && itemBg.map((item,index)=>{
                 return(
-                  <div className="item">
+
+                  
+                <div className="item">
                   <div className="info" style={{background:item}}>
-                   <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                   <h5>Cake & Milk </h5>
+                   <img src="https://cdn-icons-png.flaticon.com/512/2682/2682446.png" alt="" />
+                   <h5>Cakes </h5>
                    <p>26 items</p>
                   </div>
                </div>
+               // https://nest-frontend-v6.netlify.app/assets/imgs/shop/cat-9.png
                 )
               })
-            }
+             } */}
+      
+             <div className="item">
+               <div className="info">
+                <img src= "https://cdn-icons-png.flaticon.com/512/2892/2892319.png" alt="" />
+                <h5>Fruits</h5>
+                <p>26 items</p>
+               </div>
+            </div> 
+         
+             <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/512/2805/2805945.png" alt="" />
+                <h5>Vegetables </h5>
+                <p>26 items</p>
+               </div>
+            </div> 
+            <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/512/4774/4774389.png" alt="" />
+                <h5>Milk&IceCream</h5>
+                <p>26 items</p>
+               </div>
+            </div> 
+            
+            <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Chips & Crackers </h5>
+                <p>26 items</p>
+               </div>
+            </div> 
+             <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Soft Drinks </h5>
+                <p>26 items</p>
+               </div>
+            </div>
+            <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Health & Wellness </h5>
+                <p>26 items</p>
+               </div>
+            </div>
+            <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Child Care </h5>
+                <p>26 items</p>
+               </div>
+            </div>
+            <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Pet Food </h5>
+                <p>26 items</p>
+               </div>
+            </div> 
+             <div className="item">
+               <div className="info">
+                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
+                <h5>Instant Foods </h5>
+                <p>26 items</p>
+               </div>
+            </div> 
            
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            {/* some part remains here */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div>
-            <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
-            {/* <div className="item">
-               <div className="info">
-                <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="" />
-                <h5>Cake & Milk </h5>
-                <p>26 items</p>
-               </div>
-            </div> */}
+           
+           
         
           </Slider>
         </div>

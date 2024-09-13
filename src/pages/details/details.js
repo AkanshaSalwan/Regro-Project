@@ -697,54 +697,57 @@ const DetailsPage = () => {
 
                       <div className="progressBarBox d-flex align-items-center">
                         <span className="mr-3 text-gray">5 star</span>
-                        <div className="progress " style={{width: '85%', height:'20px'}}>
+                        <div className="progress " style={{width: '65%', height:'27px'}}>
                           <div
                             class="progress-bar bg-success"
-                            style={{ width: '70%',height:'20px'}}
-                          ></div>
+                            style={{ width: '50%',height:'27px'}}
+                          >50%</div>
                         </div>
                       </div>
 
                       <div className="progressBarBox d-flex align-items-center">
                         <span className="mr-3 text-gray">5 star</span>
-                        <div className="progress " style={{width: '85%', height:'20px'}}>
+                        <div className="progress " style={{width: '65%', height:'27px'}}>
                           <div
                             class="progress-bar bg-success"
-                            style={{ width: '70%',height:'20px'}}
-                          ></div>
+                            style={{ width: '20%',height:'27px'}}
+                          >20%</div>
                         </div>
                       </div>
 
                       <div className="progressBarBox d-flex align-items-center">
                         <span className="mr-3 text-gray">5 star</span>
-                        <div className="progress " style={{width: '85%', height:'20px'}}>
+                        <div className="progress " style={{width: '65%', height:'27px'}}>
                           <div
                             class="progress-bar bg-success"
-                            style={{ width: '70%',height:'20px'}}
-                          ></div>
+                            style={{ width: '40%',height:'27px'}}
+                          >40%</div>
                         </div>
                       </div>
 
                       <div className="progressBarBox d-flex align-items-center">
                         <span className="mr-3 text-gray">5 star</span>
-                        <div className="progress " style={{width: '85%', height:'20px'}}>
+                        <div className="progress " style={{width: '65%', height:'27px'}}>
                           <div
                             class="progress-bar bg-success"
-                            style={{ width: '70%',height:'20px'}}
-                          ></div>
+                            style={{ width: '35%',height:'27px'}}
+                          >35%</div>
                         </div>
                       </div>
 
                       <div className="progressBarBox d-flex align-items-center">
                         <span className="mr-3 text-gray">5 star</span>
-                        <div className="progress " style={{width: '85%', height:'20px'}}>
+                        <div className="progress " style={{width: '65%', height:'27px'}}>
                           <div
                             class="progress-bar bg-success"
-                            style={{ width: '70%',height:'20px'}}
-                          ></div>
+                            style={{ width: '80%',height:'27px'}}
+                          >80%</div>
                         </div>
                       </div>
-                      
+                      <br />
+                      <hr />
+                        <p className="text-gray">How are ratings calculated?</p>
+
                     </div>
                   </div>
                 </div>
